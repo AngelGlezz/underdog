@@ -1,0 +1,478 @@
+@font-face
+{
+   font-family: "Proxima-Nova-Black";
+   src: url(../fonts/proxima_ssv/Proxima-Nova-Black.otf) format("opentype");
+}
+
+@font-face
+{
+   font-family: "Proxima-Nova-Bold";
+   src: url(../fonts/proxima_ssv/Proxima-Nova-Bold.otf) format("opentype");
+}
+
+@font-face
+{
+   font-family: "Proxima-Nova-Extrabold";
+   src: url(../fonts/proxima_ssv/Proxima-Nova-Extrabold.otf) format("opentype");
+}
+
+@font-face
+{
+   font-family: "Proxima-Nova-Regular";
+   src: url(../fonts/proxima_ssv/Proxima-Nova-Regular.otf) format("opentype");
+}
+
+@font-face
+{
+   font-family: "BodoniModa-Black";
+   src: url(../fonts/Bodoni_Moda/BodoniModa-Black.ttf) format("opentype");
+}
+
+@font-face
+{
+   font-family: "BodoniModa-Bold";
+   src: url(../fonts/Bodoni_Moda/BodoniModa-Bold.ttf) format("opentype");
+}
+
+@font-face
+{
+   font-family: "BodoniModa-ExtraBold";
+   src: url(../fonts/Bodoni_Moda/BodoniModa-ExtraBold.ttf) format("opentype");
+}
+
+@font-face
+{
+   font-family: "BodoniModa-Regular";
+   src: url(../fonts/Bodoni_Moda/BodoniModa-Regular.ttf) format("opentype");
+}
+
+#cover {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-image: url(../images/fondo-cover.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#logo_cover {
+    background-image: url(../images/underdog.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.container {
+    max-width: 1300px!important;
+    padding: 0px!important;
+}
+
+#navbarTogglerDemo02 {
+    justify-content: end;
+}
+
+.navbar {
+    width: 100%;
+    height: 100px;
+    padding: 32px 0px;
+    background-color: #4e4e4e;
+}
+
+.navbar-brand {
+    width: 243px;
+    height: 44px;
+    background-image: url(../images/underdog-h.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.nav-link {
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 0.45px;
+    text-align: left;
+    margin-right: 56px;
+    font-family: 'Proxima-Nova-Regular', sans-serif;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+.last {
+    margin: 0px!important;
+}
+
+#our-section {
+    width: 100%;
+    padding: 150px 0px;
+    background-color: #f1f0f0;
+}
+
+.our-container {
+    padding: 0px!important;
+    max-width: 26%!important;
+}
+
+.our-title {
+    font-family: 'Proxima-Nova-Extrabold', sans-serif;
+    font-size: 48px;
+    color: #363636;
+    height: 100px;
+    line-height: 50px;
+}
+
+.out-txt {
+    font-family: 'Proxima-Nova-Regular', sans-serif;
+    font-size: 22px;
+    line-height: 1.84;
+    color: #363636;
+    margin-top: 20px;
+    height: 200px;
+}
+
+.our-button {
+    width: 100%;
+    height: 68px;
+    margin: 64px auto 0px auto;
+    border: solid 1px #272425;
+    padding-top: 16px;
+    text-align: center;
+    font-family: 'BodoniModa-Bold', sans-serif;
+    font-size: 21px;
+    font-weight: 900;
+    color: #363636;
+    overflow: auto;
+    cursor: pointer;
+    transition: all .6s ease;
+}
+
+.our-button:hover {
+    background-color: #272425;
+    color: #fff;
+}
+
+#brands-section {
+    width: 100%;
+    background-color: #fff;
+    padding: 150px 0px;
+}
+
+.title-section {
+    width: 100%;
+    font-size: 48px;
+    color: #363636;
+    font-family: 'Proxima-Nova-Black', sans-serif;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.brand-content {
+    position: relative;
+    border: 1px solid #272425; 
+    padding: 0px!important;
+    height: 316px;
+    max-width: 30%!important;
+}
+
+#brands-section .container .row {
+    margin-left: 0px!important;
+    margin-right: 0px!important;
+    margin-top: 5%;
+}
+
+.brand-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 300px;
+    height: 110px;
+    position: absolute;
+    margin: auto;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+
+#note {
+    width: 185px;
+    height: 30px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    border-top: 1px solid #272425;
+    border-left: 1px solid #272425;
+    font-size: 12px;
+    font-family: 'Proxima-Nova-Regular', sans-serif;
+    text-align: center;
+    line-height: 30px;
+}
+
+#mt {
+    background-image: url(../images/medio-tiempo.png);
+}
+
+#jf {
+    background-image: url(../images/juanfut.png);
+}
+
+#jb {
+    background-image: url(../images/juanbeis.png);
+}
+
+#fp {
+    background-image: url(../images/fridapop.png);
+    width: 200px;
+    height: 200px;
+}
+
+#tk {
+    background-image: url(../images/tikitaka.png);
+}
+
+#pt {
+    background-image: url(../images/penta.png);
+}
+
+#clients-section {
+    width: 100%;
+    padding: 150px 0px;
+    background-color: #f1f0f0;
+}
+
+#clients-section .container {
+    overflow: auto;
+}
+
+#clients-section .container .title-section, #investors-section .container .title-section, #milestones-section .container .title-section {
+    text-align: left;
+}
+
+.clients-item {
+    width: 135px;
+    height: 90px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    float: left;
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.clients-item:nth-child(7n+1) {
+    margin-right: 0px;
+}
+
+div.clients-item:nth-of-type(2) {
+    background-image: url(../images/adidas.png);
+}
+
+div.clients-item:nth-of-type(3) {
+    background-image: url(../images/barcel.png);
+}
+
+div.clients-item:nth-of-type(4) {
+    background-image: url(../images/bundesliga.png);
+}
+
+div.clients-item:nth-of-type(5) {
+    background-image: url(../images/caliente.png);
+}
+
+div.clients-item:nth-of-type(6) {
+    background-image: url(../images/cocacola.png);
+}
+
+div.clients-item:nth-of-type(7) {
+    background-image: url(../images/ea-sport.png);
+}
+
+div.clients-item:nth-of-type(8) {
+    background-image: url(../images/game-pass.png);
+}
+
+div.clients-item:nth-of-type(9) {
+    background-image: url(../images/gillete.png);
+}
+
+div.clients-item:nth-of-type(10) {
+    background-image: url(../images/heineken.png);
+}
+
+div.clients-item:nth-of-type(11) {
+    background-image: url(../images/innovasport.png);
+}
+
+div.clients-item:nth-of-type(12) {
+    background-image: url(../images/liga-mx.png);
+}
+
+div.clients-item:nth-of-type(13) {
+    background-image: url(../images/mextenis.png);
+}
+
+div.clients-item:nth-of-type(14) {
+    background-image: url(../images/nfl.png);
+}
+
+div.clients-item:nth-of-type(15) {
+    background-image: url(../images/nike.png);
+}
+
+div.clients-item:nth-of-type(16) {
+    background-image: url(../images/nissan.png);
+}
+
+div.clients-item:nth-of-type(17) {
+    background-image: url(../images/patriots.png);
+}
+
+div.clients-item:nth-of-type(18) {
+    background-image: url(../images/samsung.png);
+}
+
+div.clients-item:nth-of-type(19) {
+    background-image: url(../images/spotify.png);
+}
+
+div.clients-item:nth-of-type(20) {
+    background-image: url(../images/tecate.png);
+}
+
+div.clients-item:nth-of-type(21) {
+    background-image: url(../images/telcle.png);
+}
+
+div.clients-item:nth-of-type(22) {
+    background-image: url(../images/tudn.png);
+}
+
+#investors-section {
+    width: 100%;
+    background-color: #fff;
+    padding: 150px 0px;
+}
+
+.investors-item {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 120px;
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+}
+
+.investors-item:nth-last-of-type(1) {
+    background-image: url(../images/gerbera.png)
+}
+
+.investors-item:nth-last-of-type(2) {
+    background-image: url(../images/north-base.png)
+}
+
+.investors-item:nth-last-of-type(3) {
+    background-image: url(../images/mexico-ventures.png)
+}
+
+.investors-item:nth-last-of-type(4) {
+    background-image: url(../images/ignia.png)
+}
+
+.investors-item:nth-last-of-type(5) {
+    background-image: url(../images/rodina.png)
+}
+
+.investors-item:nth-last-of-type(6) {
+    background-image: url(../images/startup-circle.png)
+}
+
+.investors-item:nth-last-of-type(7) {
+    background-image: url(../images/pmovil.png)
+}
+
+#milestones-section {
+    width: 100%;
+    padding: 150px 0px;
+    background-color: #f1f0f0;
+}
+
+.carousel {
+    width: 600px;
+    height: 230px;
+    margin: 50px auto;
+}
+
+.slick-list, .slick-track {
+    height: 100%!important;
+}
+
+.info-item {
+    width: 600px!important;
+    border: 2px solid #363636;
+    margin: auto;
+}
+
+.carousel .slick-slide {
+    opacity: 0;
+    -webkit-transition: opacity 2s ease;
+    transition: opacity 2s ease;
+}
+
+.carousel .slick-slide.slick-active {
+    opacity: 1;
+}
+
+.carousel-img-container {
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.carousel-img {
+    width: 173px;
+    height: 118px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.carousel-txt {
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    float: right;
+    padding: 20px;
+}
+
+.carousel-date {
+    font-family: 'Proxima-Nova-Bold', sans-serif;
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #363636;
+}
+
+.carousel-description {
+    font-family: 'Proxima-Nova-Regular', sans-serif;
+    font-size: 18px;
+    color: #363636;
+}
