@@ -57,7 +57,7 @@
     position: relative;
 }
 
-#logo_cover {
+.logo {
     background-image: url(../images/underdog.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -73,8 +73,8 @@
 }
 
 .container {
-    max-width: 1300px!important;
     padding: 0px!important;
+    overflow: auto;
 }
 
 #navbarTogglerDemo02 {
@@ -102,7 +102,7 @@
     font-size: 18px;
     letter-spacing: 0.45px;
     text-align: left;
-    margin-right: 56px;
+    margin-right: 2rem;
     font-family: 'Proxima-Nova-Regular', sans-serif;
     text-decoration: none;
 }
@@ -257,15 +257,16 @@
     overflow: auto;
 }
 
-#clients-section .container .title-section, #investors-section .container .title-section, #milestones-section .container .title-section {
+#clients-section .container .title-section, #investors-section .container .title-section,
+#milestones-section .container .title-section, #contact-section .container .title-section {
     text-align: left;
 }
 
 .clients-item {
     width: 135px;
     height: 90px;
-    margin-right: 50px;
-    margin-bottom: 50px;
+    margin-right: 30px;
+    margin-bottom: 30px;
     float: left;
     background-position: center;
     background-size: auto;
@@ -369,38 +370,43 @@ div.clients-item:nth-of-type(22) {
 .investors-item {
     background-position: center;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: contain;
     height: 120px;
     padding-left: 0px!important;
     padding-right: 0px!important;
+    width: 22%;
+    float: left;
+    margin-right: 3%;
 }
 
-.investors-item:nth-last-of-type(1) {
-    background-image: url(../images/gerbera.png)
+.investors-item:nth-of-type(2) {
+    background-image: url(../images/gerbera.png);
 }
 
-.investors-item:nth-last-of-type(2) {
-    background-image: url(../images/north-base.png)
+.investors-item:nth-of-type(3) {
+    background-image: url(../images/north-base.png);
 }
 
-.investors-item:nth-last-of-type(3) {
-    background-image: url(../images/mexico-ventures.png)
+.investors-item:nth-of-type(4) {
+    background-image: url(../images/mexico-ventures.png);
 }
 
-.investors-item:nth-last-of-type(4) {
-    background-image: url(../images/ignia.png)
+.investors-item:nth-of-type(5) {
+    background-image: url(../images/ignia.png);
+    margin-right: 0px!important;
 }
 
-.investors-item:nth-last-of-type(5) {
-    background-image: url(../images/rodina.png)
+.investors-item:nth-of-type(6) {
+    background-image: url(../images/rodina.png);
+    background-size: 100%!important;
 }
 
-.investors-item:nth-last-of-type(6) {
-    background-image: url(../images/startup-circle.png)
+.investors-item:nth-of-type(7) {
+    background-image: url(../images/startup-circle.png);
 }
 
-.investors-item:nth-last-of-type(7) {
-    background-image: url(../images/pmovil.png)
+.investors-item:nth-of-type(8) {
+    background-image: url(../images/pmovil.png);
 }
 
 #milestones-section {
@@ -409,7 +415,7 @@ div.clients-item:nth-of-type(22) {
     background-color: #f1f0f0;
 }
 
-#milestones-section .container {
+#container-carousel {
     height: 500px;
 }
 
@@ -509,7 +515,7 @@ div.clients-item:nth-of-type(22) {
     border-radius: 51%;
     background-position: center!important;
     background-repeat: no-repeat!important;
-    background-size: 75% 50%!important;
+    background-size: 70% 50%!important;
     margin-top: -15px;
     background-color: #272425!important;
     -webkit-transition: -webkit-transform .5s ease;
@@ -546,6 +552,7 @@ div.clients-item:nth-of-type(22) {
 #slick-slide-control03 {
     background-color: #000!important;
     background-image: url(../images/jf-thumb.png);
+    background-size: 80% 80% !important;
 }
 
 #slick-slide-control04 {
@@ -569,4 +576,225 @@ div.clients-item:nth-of-type(22) {
 #slick-slide-control07 {
     background-color:#000!important;
     background-image: url(../images/tk-thumb.png);
+}
+
+#contact-section {
+    width: 100%;
+    padding: 150px 0px;
+    background-color: #fff;
+}
+
+.title-contact {
+    font-family: 'Proxima-Nova-Bold', sans-serif;
+    font-size: 30px;
+    color: #363636;
+}
+
+.email-contact {
+    font-family: 'Proxima-Nova-Regular', sans-serif;
+    font-size: 22px;
+    color: #aaaaaa;
+}
+
+#footer-section {
+    width: 100%;
+    padding: 50px 0px;
+    background-color: #000;
+}
+
+#footer-section .container {
+    overflow: auto;
+    position: relative;
+}
+
+#footer-section .container .logo {
+    width: 150px;
+    height: 100px;
+    float: left;
+    position: initial;
+}
+
+#combo {
+    float: right;
+    width: 350px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+#combo select {
+    background-color: #000;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 12px;
+    font-family: 'Proxima-Nova-Regular';
+    width: 125px;
+    height: 20px;
+    float: left;
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    -webkit-appearance: none; -moz-appearance: none; appearance: none;
+}
+
+#date-dev {
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Proxima-Nova-Regular';
+    float: right;
+}
+
+#container-timeline {
+    max-width: 768px!important;
+    overflow: auto;
+    position: relative;
+    display: none;
+}
+
+.timeline-item {
+    width: 100%;
+    padding-left: 10px;
+    overflow: auto;
+}
+
+.timeline-img-container {
+    width: 40px;
+    height: 40px;
+    border-radius: 51%;
+    margin-right: 20px;
+    z-index: 9999;
+}
+
+.timeline-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 51%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.timeline-item:nth-of-type(1) .timeline-img-container .timeline-img {
+    background-size: 70% 50%;
+}
+
+.timeline-item:nth-of-type(2) .timeline-img-container .timeline-img {
+    background-size: 80% 55%;
+}
+
+.timeline-item:nth-of-type(3) .timeline-img-container .timeline-img {
+    background-size: 80% 55%;
+}
+
+.timeline-item:nth-of-type(4) .timeline-img-container .timeline-img {
+    background-size: 80% 80%;
+}
+
+.timeline-item:nth-of-type(5) .timeline-img-container .timeline-img {
+    background-size: 60% 60%;
+}
+
+.timeline-item:nth-of-type(6) .timeline-img-container .timeline-img {
+    background-size: 70% 70%;
+}
+
+.timeline-item:nth-of-type(7) .timeline-img-container .timeline-img {
+    background-size: 60% 55%;
+}
+
+.timeline-item:nth-of-type(8) .timeline-img-container .timeline-img {
+    background-size: 80% 55%;
+}
+
+.timeline-txt {
+    width: 80%;
+    margin-bottom: 35px;
+}
+
+#back-line {
+    position: absolute;
+    top: 0px;
+    left: 1.9rem;
+    width: 0.08rem;
+    height: calc(95% - 3rem);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: rgb(204, 204, 204);
+}
+
+.timeline-date {
+    font-family: 'Proxima-Nova-Bold', sans-serif;
+    font-size: 16px;
+    color: #363636;
+    margin-bottom: 10px;
+}
+
+.timeline-description {
+    font-family: 'Proxima-Nova-Regular', sans-serif;
+    font-size: 13px;
+    color: #363636;
+}
+
+@media screen and (max-width: 1210px) {
+    .brand-img {
+        width: 80%;
+    }
+
+    .our-title {
+        font-size: 35px;
+    }
+
+    .out-txt {
+        font-size: 20px;
+        height: 220px;
+    }
+
+    .clients-item:nth-child(7n+1) {
+        margin-right: 30px;
+    }
+
+    .clients-item:nth-child(6n+1) {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .navbar-brand {
+        background-image: url(../images/underdog.png);
+    }
+
+    .out-txt {
+        height: 300px;
+    }
+
+    .clients-item:nth-child(6n+1) {
+        margin-right: 30px;
+    }
+
+    .clients-item:nth-child(4n+1) {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .our-title {
+        font-size: 27px;
+        line-height: 35px;
+    }
+
+    .out-txt {
+        font-size: 17px;
+        height: 220px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #container-timeline {
+        display: block;
+    }
+
+    #container-carousel {
+        display: none;
+    }
 }
