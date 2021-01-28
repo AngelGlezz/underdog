@@ -409,13 +409,22 @@ div.clients-item:nth-of-type(22) {
     background-color: #f1f0f0;
 }
 
+#milestones-section .container {
+    height: 500px;
+}
+
 .carousel {
-    width: 600px;
     height: 230px;
     margin: 50px auto;
 }
 
-.slick-list, .slick-track {
+.slick-list {
+    width: 600px!important;
+    height: 100%!important;
+    margin: auto!important;
+}
+
+.slick-track {
     height: 100%!important;
 }
 
@@ -475,4 +484,89 @@ div.clients-item:nth-of-type(22) {
     font-family: 'Proxima-Nova-Regular', sans-serif;
     font-size: 18px;
     color: #363636;
+}
+
+.slick-dots {
+    bottom: -100px!important;
+}
+
+.slick-dots li {
+    text-align: center;
+    overflow: visible;
+    width: 13%!important;
+    height: 4px!important;
+    margin: 0px!important;
+    background-color: #aaaaaa;
+}
+
+.slick-dots li button::before {
+    content: none!important;
+}
+
+.slick-dots li button {
+    width: 36px!important;
+    height: 36px!important;
+    border-radius: 51%;
+    background-position: center!important;
+    background-repeat: no-repeat!important;
+    background-size: 75% 50%!important;
+    margin-top: -15px;
+    background-color: #272425!important;
+    -webkit-transition: -webkit-transform .5s ease;
+    -webkit-transition: transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.slick-dots li:nth-of-type(8) {
+    background-color: transparent;
+    max-width: 36px;
+}
+
+.slick-active button {
+    -webkit-transform: scale(1.75);
+    -ms-transform: scale(1.75);
+    transform: scale(1.75);
+}
+
+#slick-slide-control00 {
+    background-color: #000!important;
+    background-image: url(../images/underdog-thumb.png);
+}
+
+#slick-slide-control01 {
+    background-color: #dad9de!important;
+    background-image: url(../images/mt-thumb.png);
+}
+
+#slick-slide-control02 {
+    background-color: #2f52a9!important;
+    background-image: url(../images/telcel-thumb.png);
+}
+
+#slick-slide-control03 {
+    background-color: #000!important;
+    background-image: url(../images/jf-thumb.png);
+}
+
+#slick-slide-control04 {
+    background-color:#d50032!important;
+    background-image: url(../images/jb-thumb.png);
+    background-size: 50% 60% !important;
+}
+
+#slick-slide-control05 {
+    background-color:#a512d6!important;
+    background-image: url(../images/fp-thumb.png);
+    background-size: 65% 65% !important;
+}
+
+#slick-slide-control06 {
+    background-color:#000!important;
+    background-image: url(../images/pt-thumb.png);
+    background-size: 60% 60% !important;
+}
+
+#slick-slide-control07 {
+    background-color:#000!important;
+    background-image: url(../images/tk-thumb.png);
 }
