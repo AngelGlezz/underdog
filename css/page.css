@@ -970,9 +970,14 @@ div.clients-item:nth-of-type(22) {
 
     #combo {
         float: none;
-        width: 100%;
+        width: 126px;
         position: initial;
         overflow: auto;
+        margin: auto;
+    }
+
+    #date-dev {
+        text-align: center;
     }
 }
 
