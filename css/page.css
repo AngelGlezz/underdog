@@ -992,6 +992,12 @@ div.clients-item:nth-of-type(22) {
     }
 }
 
+@media (min-width: 576px){
+    .navbar .container .container{
+        width:auto;
+    }
+}
+
 @media screen and (max-width: 540px) {
     #cover-info {
         width: 90%;
