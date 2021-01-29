@@ -152,8 +152,8 @@
 }
 
 .navbar-brand {
-    max-width: 80px;
-    width: 80px;
+    max-width: 243px;
+    width: 243px;
     height: 44px;
     background-image: url(../images/underdog-h.png);
     background-position: center;
@@ -630,7 +630,7 @@ div.clients-item:nth-of-type(22) {
     background-size: 80% 80% !important;
 }
 
-#slick-slide-control04 {
+#slick-slide-control07 {
     background-color:#d50032!important;
     background-image: url(../images/jb-thumb.png);
     background-size: 50% 60% !important;
@@ -642,13 +642,13 @@ div.clients-item:nth-of-type(22) {
     background-size: 65% 65% !important;
 }
 
-#slick-slide-control06 {
+#slick-slide-control04 {
     background-color:#000!important;
     background-image: url(../images/pt-thumb.png);
     background-size: 60% 60% !important;
 }
 
-#slick-slide-control07 {
+#slick-slide-control06 {
     background-color:#000!important;
     background-image: url(../images/tk-thumb.png);
 }
@@ -705,6 +705,7 @@ div.clients-item:nth-of-type(22) {
     font-family: 'Proxima-Nova-Regular';
     width: 125px;
     height: 20px;
+    padding: 0px 4px 1px;
     float: left;
     outline:none !important;
     outline-width: 0 !important;
@@ -837,6 +838,8 @@ div.clients-item:nth-of-type(22) {
 @media screen and (max-width: 991px) {
     .navbar-brand {
         background-image: url(../images/underdog.png);
+        width: 80px;
+        max-width: 80px;
     }
 
     #our-section .container {
