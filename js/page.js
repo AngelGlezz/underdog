@@ -46,14 +46,14 @@ $(document).ready(function(){
         return false;
 	});
 
-	$("#brands").click(function() {
+	$(".brands").click(function() {
 		$('body,html').animate({
             scrollTop: $('#brands-section').offset().top
         }, 1000);
         return false;
 	});
 
-	$("#clients").click(function() {
+	$(".clients").click(function() {
 		$('body,html').animate({
             scrollTop: $('#clients-section').offset().top
         }, 1000);
