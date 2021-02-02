@@ -145,6 +145,7 @@
     background-color: #4e4e4e;
     z-index: 9999;
     padding: 0px!important;
+    align-items: self-start!important;
 }
 
 .navbar .container {
