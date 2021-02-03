@@ -568,13 +568,13 @@ div.clients-item:nth-of-type(25) {
     height: 100%;
     background-color: #fff;
     float: right;
-    padding: 20px;
+    padding: 15px 20px;
 }
 
 .carousel-date {
     font-family: 'Proxima-Nova-Bold', sans-serif;
-    font-size: 30px;
-    margin-bottom: 15px;
+    font-size: 25px;
+    margin-bottom: 5px;
     color: #363636;
 }
 
@@ -1000,11 +1000,15 @@ div.clients-item:nth-of-type(25) {
     }
 
     .investors-item {
-        width: 48%;
+        width: 110px;
+        height: 60px;
+        margin-right: 20%;
+        margin-bottom: 1rem!important;
     }
 
     .investors-item:nth-child(2n+1) {
         margin-right: 0px;
+        float: right;
     }
 
     #footer-section .container .logo, #combo select, #date-dev {
@@ -1024,8 +1028,28 @@ div.clients-item:nth-of-type(25) {
         text-align: center;
     }
 
-    #brands-section, #clients-section, #investors-section, #milestones-section, #contact-section {
+    #brands-section, #clients-section, #investors-section, #milestones-section, #contact-section, #our-section {
         padding: 60px 0px;
+    }
+
+    .our-container {
+        margin: 0px auto 50px auto !important;
+    }
+
+    .our-title, .out-txt {
+        height: auto!important;
+    }
+
+    .our-button {
+        margin: 30px auto 0px auto;
+    }
+
+    .title-section {
+        margin-bottom: 30px;
+    }
+
+    .brand-content {
+        margin: 0px auto 25px auto !important;
     }
 }
 
