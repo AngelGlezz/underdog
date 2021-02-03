@@ -67,7 +67,7 @@ $(document).ready(function(){
         return false;
 	});
 
-	$("#milestones").click(function() {
+	$(".milestones").click(function() {
 		$('body,html').animate({
             scrollTop: $('#milestones-section').offset().top
         }, 1000);

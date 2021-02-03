@@ -101,6 +101,7 @@
     color: #fff;
     line-height: 1.38;
     letter-spacing: 0.13px;
+    text-align: center;
 }
 
 #who {
@@ -150,6 +151,7 @@
 
 .navbar .container {
     max-width: 90%!important;
+    min-height: 100%;
 }
 
 .navbar-brand {
@@ -341,7 +343,7 @@
 }
 
 .clients-item {
-    width: 135px;
+    width: 165px;
     height: 90px;
     margin-right: 30px;
     margin-bottom: 30px;
@@ -351,7 +353,7 @@
     background-repeat: no-repeat;
 }
 
-.clients-item:nth-child(7n+1) {
+.clients-item:nth-child(6n+1) {
     margin-right: 0px;
 }
 
@@ -380,62 +382,74 @@ div.clients-item:nth-of-type(7) {
 }
 
 div.clients-item:nth-of-type(8) {
-    background-image: url(../images/game-pass.png);
+    background-image: url(../images/fox.png);
 }
 
 div.clients-item:nth-of-type(9) {
-    background-image: url(../images/gillete.png);
+    background-image: url(../images/game-pass.png);
 }
 
 div.clients-item:nth-of-type(10) {
-    background-image: url(../images/heineken.png);
+    background-image: url(../images/gillete.png);
 }
 
 div.clients-item:nth-of-type(11) {
-    background-image: url(../images/innovasport.png);
+    background-image: url(../images/heineken.png);
 }
 
 div.clients-item:nth-of-type(12) {
-    background-image: url(../images/liga-mx.png);
+    background-image: url(../images/innovasport.png);
 }
 
 div.clients-item:nth-of-type(13) {
-    background-image: url(../images/mextenis.png);
+    background-image: url(../images/liga-mx.png);
 }
 
 div.clients-item:nth-of-type(14) {
-    background-image: url(../images/nfl.png);
+    background-image: url(../images/mextenis.png);
 }
 
 div.clients-item:nth-of-type(15) {
-    background-image: url(../images/nike.png);
+    background-image: url(../images/nba.png);
 }
 
 div.clients-item:nth-of-type(16) {
-    background-image: url(../images/nissan.png);
+    background-image: url(../images/nfl.png);
 }
 
 div.clients-item:nth-of-type(17) {
-    background-image: url(../images/patriots.png);
+    background-image: url(../images/nike.png);
 }
 
 div.clients-item:nth-of-type(18) {
-    background-image: url(../images/samsung.png);
+    background-image: url(../images/nissan.png);
 }
 
 div.clients-item:nth-of-type(19) {
-    background-image: url(../images/spotify.png);
+    background-image: url(../images/patriots.png);
 }
 
 div.clients-item:nth-of-type(20) {
-    background-image: url(../images/tecate.png);
+    background-image: url(../images/samsung.png);
 }
 
 div.clients-item:nth-of-type(21) {
-    background-image: url(../images/telcle.png);
+    background-image: url(../images/spotify.png);
 }
 
 div.clients-item:nth-of-type(22) {
+    background-image: url(../images/sum.png);
+}
+
+div.clients-item:nth-of-type(23) {
+    background-image: url(../images/tecate.png);
+}
+
+div.clients-item:nth-of-type(24) {
+    background-image: url(../images/telcle.png);
+}
+
+div.clients-item:nth-of-type(25) {
     background-image: url(../images/tudn.png);
 }
 
@@ -446,7 +460,7 @@ div.clients-item:nth-of-type(22) {
 }
 
 .investors-item {
-    background-position: center;
+    background-position: right center;
     background-repeat: no-repeat;
     background-size: contain;
     height: 120px;
@@ -461,29 +475,29 @@ div.clients-item:nth-of-type(22) {
     background-image: url(../images/gerbera.png);
 }
 
-.investors-item:nth-of-type(3) {
+.investors-item:nth-of-type(5) {
     background-image: url(../images/north-base.png);
+    margin-right: 0px!important;
 }
 
 .investors-item:nth-of-type(4) {
     background-image: url(../images/mexico-ventures.png);
 }
 
-.investors-item:nth-of-type(5) {
+.investors-item:nth-of-type(3) {
     background-image: url(../images/ignia.png);
-    margin-right: 0px!important;
 }
 
-.investors-item:nth-of-type(6) {
+.investors-item:nth-of-type(7) {
     background-image: url(../images/rodina.png);
     background-size: 100%!important;
 }
 
-.investors-item:nth-of-type(7) {
+.investors-item:nth-of-type(8) {
     background-image: url(../images/startup-circle.png);
 }
 
-.investors-item:nth-of-type(8) {
+.investors-item:nth-of-type(6) {
     background-image: url(../images/pmovil.png);
 }
 
@@ -829,11 +843,11 @@ div.clients-item:nth-of-type(22) {
         height: 220px;
     }
 
-    .clients-item:nth-child(7n+1) {
+    .clients-item:nth-child(6n+1) {
         margin-right: 30px;
     }
 
-    .clients-item:nth-child(6n+1) {
+    .clients-item:nth-child(5n+1) {
         margin-right: 0px;
     }
 }
@@ -861,11 +875,15 @@ div.clients-item:nth-of-type(22) {
         max-width: 630px!important;
     }
 
-    .clients-item:nth-child(6n+1) {
+    .clients-item {
+        width: 186px;
+    }
+
+    .clients-item:nth-child(5n+1) {
         margin-right: 30px;
     }
 
-    .clients-item:nth-child(4n+1) {
+    .clients-item:nth-child(3n+1) {
         margin-right: 0px;
     }
 }
@@ -887,8 +905,16 @@ div.clients-item:nth-of-type(22) {
 }
 
 @media screen and (max-width: 767px) {
+    .navbar {
+        height: 50px!important;
+    }
+
     .navbar-brand{
         display: block!important;
+        max-width: 150px;
+        height: 30px;
+        width: 100%;
+        background-image: url(../images/underdog-h.png);
     }
 
     #cover .logo {
@@ -899,16 +925,8 @@ div.clients-item:nth-of-type(22) {
         display: block;
     }
 
-    .navbar-brand {
-        max-width: 70px;
-    }
-
     .navbar-expand-md .navbar-nav .nav-link {
         padding-right: .45rem!important;
-    }
-
-    #navbarTogglerDemo02 {
-        padding: 20px 0px;
     }
 
     .nav-item {
@@ -924,6 +942,18 @@ div.clients-item:nth-of-type(22) {
         max-width: 100%!important;
         width: 100%!important;
         margin: 0px!important;
+    }
+
+    .navbar .container .container {
+        max-width: 100%!important;
+        width: 100%!important;
+        margin: 0px!important;
+        min-height: 50px!important;
+    }
+
+    .navbar-toggler-icon {
+        width: 25px!important;
+        height: 25px!important;
     }
 
     #clients-section .container .title-section, #investors-section .container .title-section, #milestones-section .container .title-section, #contact-section .container .title-section {
@@ -957,6 +987,10 @@ div.clients-item:nth-of-type(22) {
         margin: 0px auto 50px auto!important;
     }
 
+    .clients-item {
+        width: 29%;
+    }
+
     .clients-item:nth-child(4n+1) {
         margin-right: 30px;
     }
@@ -966,7 +1000,11 @@ div.clients-item:nth-of-type(22) {
     }
 
     .investors-item {
-        width: 43%;
+        width: 48%;
+    }
+
+    .investors-item:nth-child(2n+1) {
+        margin-right: 0px;
     }
 
     #footer-section .container .logo, #combo select, #date-dev {
@@ -984,6 +1022,10 @@ div.clients-item:nth-of-type(22) {
 
     #date-dev {
         text-align: center;
+    }
+
+    #brands-section, #clients-section, #investors-section, #milestones-section, #contact-section {
+        padding: 60px 0px;
     }
 }
 
@@ -1006,23 +1048,25 @@ div.clients-item:nth-of-type(22) {
     }
 }
 
-@media screen and (max-width: 518px) {
+@media screen and (max-width: 520px) {
     #clients-section .container {
-        max-width: 300px !important;
+        max-width: 95% !important;
+    }
+
+    .clients-item {
+        width: 30%;
+        margin-right: 20px!important;
+        margin-bottom: 20px;
     }
 
     .clients-item:nth-child(3n+1) {
-        margin-right: 30px;
-    }
-
-    .clients-item:nth-child(2n+1) {
-        margin-right: 0px;
+        margin-right: 0px!important;
     }
 }
 
 @media screen and (max-width: 467px) {
     .clients-item {
-        width: 41%;
+        height: 75px;
     }
 
     .title-contact {
@@ -1031,5 +1075,17 @@ div.clients-item:nth-of-type(22) {
 
     .email-contact {
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 444px) {
+    .clients-item {
+        width: 29%;
+    }
+}
+
+@media screen and (max-width: 342px) {
+    .clients-item {
+        width: 28%;
     }
 }
