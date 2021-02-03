@@ -304,25 +304,25 @@
 }
 
 #jf {
-    background-image: url(../images/juanfut.png);
+    background-image: url(../images/logo_juanfutbol_b.svg);
 }
 
 #jb {
-    background-image: url(../images/juanbeis.png);
+    background-image: url(../images/logo_jb.svg);
 }
 
 #fp {
-    background-image: url(../images/fridapop.png);
+    background-image: url(../images/logo_frida.svg);
     width: 200px;
     height: 200px;
 }
 
 #tk {
-    background-image: url(../images/tikitaka.png);
+    background-image: url(../images/tikitaka_logo_b.svg);
 }
 
 #pt {
-    background-image: url(../images/penta.png);
+    background-image: url(../images/penta_logo.svg);
 }
 
 #clients-section {
@@ -629,31 +629,31 @@ div.clients-item:nth-of-type(22) {
 
 #slick-slide-control03 {
     background-color: #000!important;
-    background-image: url(../images/jf-thumb.png);
+    background-image: url(../images/icon_juanfutbol.svg);
     background-size: 80% 80% !important;
 }
 
 #slick-slide-control07 {
     background-color:#d50032!important;
-    background-image: url(../images/jb-thumb.png);
+    background-image: url(../images/icon_jb.svg);
     background-size: 50% 60% !important;
 }
 
 #slick-slide-control05 {
     background-color:#a512d6!important;
-    background-image: url(../images/fp-thumb.png);
+    background-image: url(../images/logo_frida_w.svg);
     background-size: 65% 65% !important;
 }
 
 #slick-slide-control04 {
     background-color:#000!important;
-    background-image: url(../images/pt-thumb.png);
+    background-image: url(../images/penta_icon.svg);
     background-size: 60% 60% !important;
 }
 
 #slick-slide-control06 {
     background-color:#000!important;
-    background-image: url(../images/tk-thumb.png);
+    background-image: url(../images/tikitaka_icon.svg);
 }
 
 #contact-section {
