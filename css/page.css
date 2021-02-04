@@ -956,6 +956,10 @@ div.clients-item:nth-of-type(25) {
         height: 25px!important;
     }
 
+    #brands-section .container .row {
+        margin-top: 0px;
+    }
+
     #clients-section .container .title-section, #investors-section .container .title-section, #milestones-section .container .title-section, #contact-section .container .title-section {
         text-align: center;
     }
@@ -999,10 +1003,14 @@ div.clients-item:nth-of-type(25) {
         margin-right: 0px;
     }
 
+    #investors-section .container {
+        width: 400px!important;
+    }
+
     .investors-item {
         width: 110px;
         height: 60px;
-        margin-right: 20%;
+        margin-right: 17%;
         margin-bottom: 1rem!important;
     }
 
@@ -1105,6 +1113,10 @@ div.clients-item:nth-of-type(25) {
 @media screen and (max-width: 444px) {
     .clients-item {
         width: 29%;
+    }
+
+    #investors-section .container {
+        width: 300px !important;
     }
 }
 
