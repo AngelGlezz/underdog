@@ -81,7 +81,6 @@
     bottom: 0px;
     left: 0px;
     right: 0px;
-    display: none;
 }
 
 #info-logo {
@@ -97,7 +96,7 @@
 #info-txt {
     width: 100%;
     font-family: 'BodoniModa-Regular', sans-serif;
-    font-size: 18px;
+    font-size: 24px;
     color: #fff;
     line-height: 1.38;
     letter-spacing: 0.13px;
@@ -116,7 +115,6 @@
     right: 0px;
     margin: auto;
     cursor: pointer;
-    display: none;
 }
 
 #line-cover {
@@ -128,7 +126,6 @@
     left: 0px;
     right: 0px;
     margin: auto;
-    display: none;
 }
 
 .container {
@@ -219,7 +216,7 @@
     line-height: 1.84;
     color: #363636;
     margin-top: 20px;
-    height: 200px;
+    height: 320px;
 }
 
 .our-button {
@@ -905,6 +902,15 @@ div.clients-item:nth-of-type(25) {
 }
 
 @media screen and (max-width: 767px) {
+    #info-logo {
+        width: 250px;
+        height: 180px;
+    }
+
+    #info-txt {
+        font-size: 18px;
+    }
+
     .navbar {
         height: 50px!important;
     }
