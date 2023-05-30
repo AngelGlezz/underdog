@@ -1,56 +1,8 @@
-@font-face
-{
-   font-family: "Proxima-Nova-Black";
-   src: url(../fonts/proxima_ssv/Proxima-Nova-Black.otf) format("opentype");
-}
-
-@font-face
-{
-   font-family: "Proxima-Nova-Bold";
-   src: url(../fonts/proxima_ssv/Proxima-Nova-Bold.otf) format("opentype");
-}
-
-@font-face
-{
-   font-family: "Proxima-Nova-Extrabold";
-   src: url(../fonts/proxima_ssv/Proxima-Nova-Extrabold.otf) format("opentype");
-}
-
-@font-face
-{
-   font-family: "Proxima-Nova-Regular";
-   src: url(../fonts/proxima_ssv/Proxima-Nova-Regular.otf) format("opentype");
-}
-
-@font-face
-{
-   font-family: "BodoniModa-Black";
-   src: url(../fonts/Bodoni_Moda/BodoniModa-Black.ttf) format("opentype");
-}
-
-@font-face
-{
-   font-family: "BodoniModa-Bold";
-   src: url(../fonts/Bodoni_Moda/BodoniModa-Bold.ttf) format("opentype");
-}
-
-@font-face
-{
-   font-family: "BodoniModa-ExtraBold";
-   src: url(../fonts/Bodoni_Moda/BodoniModa-ExtraBold.ttf) format("opentype");
-}
-
-@font-face
-{
-   font-family: "BodoniModa-Regular";
-   src: url(../fonts/Bodoni_Moda/BodoniModa-Regular.ttf) format("opentype");
-}
-
 #cover {
     width: 100%;
     height: 100vh;
     background-color: black;
-    background-image: url(../images/fondo-cover.jpg);
+    background-image: url(../images/v2/cover.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -77,10 +29,8 @@
     height: 310px;
     margin: auto;
     position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
+    top: 300px;
+    left: 50px;
 }
 
 #info-logo {
@@ -93,44 +43,18 @@
     background-size: 100% 100%;
 }
 
-#info-txt {
-    width: 100%;
-    font-family: 'BodoniModa-Regular', sans-serif;
-    font-size: 24px;
-    color: #fff;
-    line-height: 1.38;
-    letter-spacing: 0.13px;
-    text-align: center;
-}
-
-#who {
-    width: 100%;
-    font-family: 'BodoniModa-Regular', sans-serif;
-    font-size: 20px;
-    color: #fff;
-    text-align: center;
-    position: absolute;
-    bottom: 40px;
-    left: 0px;
-    right: 0px;
-    margin: auto;
-    cursor: pointer;
-}
-
 #line-cover {
-    width: 2px;
-    height: 35px;
-    background-color: #fdfdfd;
+    width: 25px;
+    height: 45px;
+    background-image: url(../images/v2/flecha.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
     position: absolute;
-    bottom: 0px;
+    bottom: 10px;
     left: 0px;
     right: 0px;
     margin: auto;
-}
-
-.container {
-    padding: 0px!important;
-    overflow: auto;
 }
 
 #navbarTogglerDemo02 {
@@ -140,7 +64,7 @@
 .navbar {
     width: 100%;
     height: 100px;
-    background-color: #4e4e4e;
+    background-color: #000;
     z-index: 9999;
     padding: 0px!important;
     align-items: self-start!important;
@@ -168,19 +92,20 @@
 }
 
 #navbarTogglerDemo02 {
-    background-color: #4e4e4e;
+    background-color: #000;
     z-index: 9999;
 }
 
 .nav-link {
-    color: #fff;
+    color: #f2f2f2;
     font-size: 18px;
     letter-spacing: 0.45px;
     text-align: left;
     margin-right: 2rem;
-    font-family: 'Proxima-Nova-Regular', sans-serif;
+    font-family: 'Mulish', serif;
     text-decoration: none;
     cursor: pointer;
+    font-weight: 400;
 }
 
 .nav-link:hover {
@@ -194,50 +119,58 @@
 #our-section {
     width: 100%;
     padding: 150px 0px;
-    background-color: #f1f0f0;
+    background-color: #fff;
 }
 
 .our-container {
     padding: 0px!important;
-    max-width: 29%!important;
+    max-width: 660px!important;
 }
 
 .our-title {
-    font-family: 'Proxima-Nova-Extrabold', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 48px;
     color: #363636;
-    height: 100px;
+    height: 50px;
     line-height: 50px;
+    font-weight: 700;
+}
+
+.wiki-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    color: #363636;
+    line-height: 45px;
+    font-weight: 600;
+    margin-top: 60px;
+}
+
+.wiki-title span {
+    color: #6a6a6a;
 }
 
 .out-txt {
-    font-family: 'Proxima-Nova-Regular', sans-serif;
-    font-size: 22px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 21px;
     line-height: 1.84;
     color: #363636;
-    margin-top: 20px;
-    height: 320px;
+    margin-top: 30px;
+    font-weight: 200;
 }
 
 .our-button {
-    width: 100%;
+    width: 205px;
     height: 68px;
-    margin: 64px auto 0px auto;
-    border: solid 1px #272425;
-    padding-top: 16px;
-    text-align: center;
-    font-family: 'BodoniModa-Bold', sans-serif;
-    font-size: 21px;
-    font-weight: 900;
-    color: #363636;
-    overflow: auto;
+    background-image: url(../images/v2/consult-btn.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 80px auto 0px auto;
+    background-size: 95%;
     cursor: pointer;
-    transition: all .6s ease;
 }
 
 .our-button:hover {
-    background-color: #272425;
-    color: #fff;
+   background-size: 100%;
 }
 
 #brands-section {
@@ -249,18 +182,17 @@
 .title-section {
     width: 100%;
     font-size: 48px;
-    color: #363636;
-    font-family: 'Proxima-Nova-Black', sans-serif;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
     margin-bottom: 70px;
-    text-align: center;
+    font-weight: 700;;
 }
 
 .brand-content {
     position: relative;
-    border: 1px solid #272425; 
     padding: 0px!important;
     height: 11rem;
-    max-width: 30%!important;
+    max-width: 240px!important;
 }
 
 #brands-section .container .row {
@@ -273,7 +205,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    width: 300px;
     height: 110px;
     max-height: 80%;
     position: absolute;
@@ -284,224 +215,354 @@
     left: 0px;
 }
 
-#note {
+.note {
+    height: 25px;
+    font-size: 10px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-align: right;
+    line-height: 25px;
+    background-color: #000;
+    border-radius: 51px;
+    padding-right: 10px;
+    font-weight: 700;
+}
+
+.note-responsive {
+    display: none;
+    padding: 0px 10px;
+}
+
+#note-mt {
     width: 185px;
-    height: 30px;
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    border-top: 1px solid #272425;
-    border-left: 1px solid #272425;
-    font-size: 12px;
-    font-family: 'Proxima-Nova-Regular', sans-serif;
-    text-align: center;
-    line-height: 30px;
+}
+
+#note-pm {
+    width: 60%;
+    margin-right: 10%;
 }
 
 #mt {
-    background-image: url(../images/medio-tiempo.png);
+    background-image: url(../images/v2/mt.png);
 }
 
 #jf {
-    background-image: url(../images/logo_juanfutbol_b.svg);
+    background-image: url(../images/v2/jf.png);
 }
 
 #jb {
-    background-image: url(../images/logo_jb.svg);
+    background-image: url(../images/v2/jb.png);
 }
 
 #fp {
-    background-image: url(../images/logo_frida.svg);
-    width: 200px;
-    height: 200px;
+    background-image: url(../images/v2/frida.png);
 }
 
 #tk {
-    background-image: url(../images/tikitaka_logo_b.svg);
+    background-image: url(../images/v2/tikitaka.png);
 }
 
 #pt {
-    background-image: url(../images/penta_logo.svg);
+    background-image: url(../images/v2/penta.png);
+}
+
+#sonder {
+    background-image: url(../images/v2/sonder.png);
+}
+
+#pokal {
+    background-image: url(../images/v2/pokal.png);
 }
 
 #clients-section {
     width: 100%;
     padding: 150px 0px;
-    background-color: #f1f0f0;
+    background-color: #fff;
 }
 
 #clients-section .container {
     overflow: auto;
 }
 
-#clients-section .container .title-section, #investors-section .container .title-section,
-#milestones-section .container .title-section, #contact-section .container .title-section {
-    text-align: left;
-}
-
 .clients-item {
-    width: 165px;
-    height: 90px;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    width: 174px;
+    height: 100px;
+    margin-right: 60px;
+    margin-bottom: 50px;
     float: left;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.clients-item:nth-child(6n+1) {
+.clients-item:nth-child(5n+1) {
     margin-right: 0px;
 }
 
 div.clients-item:nth-of-type(2) {
-    background-image: url(../images/adidas.png);
+    background-image: url(../images/v2/adidas.png);
 }
 
 div.clients-item:nth-of-type(3) {
-    background-image: url(../images/barcel.png);
+    background-image: url(../images/v2/caliente.png);
 }
 
 div.clients-item:nth-of-type(4) {
-    background-image: url(../images/bundesliga.png);
+    background-image: url(../images/v2/cocacola.png);
 }
 
 div.clients-item:nth-of-type(5) {
-    background-image: url(../images/caliente.png);
+    background-image: url(../images/v2/cowboys.png);
 }
 
 div.clients-item:nth-of-type(6) {
-    background-image: url(../images/cocacola.png);
+    background-image: url(../images/v2/ea.png);
 }
 
 div.clients-item:nth-of-type(7) {
-    background-image: url(../images/ea-sport.png);
+    background-image: url(../images/v2/footballco.png);
 }
 
 div.clients-item:nth-of-type(8) {
-    background-image: url(../images/fox.png);
+    background-image: url(../images/v2/foxsports.png);
 }
 
 div.clients-item:nth-of-type(9) {
-    background-image: url(../images/game-pass.png);
+    background-image: url(../images/v2/heineken.png);
 }
 
 div.clients-item:nth-of-type(10) {
-    background-image: url(../images/gillete.png);
+    background-image: url(../images/v2/innova.png);
 }
 
 div.clients-item:nth-of-type(11) {
-    background-image: url(../images/heineken.png);
+    background-image: url(../images/v2/lmb.png);
 }
 
 div.clients-item:nth-of-type(12) {
-    background-image: url(../images/innovasport.png);
+    background-image: url(../images/v2/laliga.png);
 }
 
 div.clients-item:nth-of-type(13) {
-    background-image: url(../images/liga-mx.png);
+    background-image: url(../images/v2/ligamx.png);
 }
 
 div.clients-item:nth-of-type(14) {
-    background-image: url(../images/mextenis.png);
+    background-image: url(../images/v2/broncos.png);
 }
 
 div.clients-item:nth-of-type(15) {
-    background-image: url(../images/nba.png);
+    background-image: url(../images/v2/mextenis.png);
 }
 
 div.clients-item:nth-of-type(16) {
-    background-image: url(../images/nfl.png);
+    background-image: url(../images/v2/nba.png);
 }
 
 div.clients-item:nth-of-type(17) {
-    background-image: url(../images/nike.png);
+    background-image: url(../images/v2/nfl.png);
 }
 
 div.clients-item:nth-of-type(18) {
-    background-image: url(../images/nissan.png);
+    background-image: url(../images/v2/nike.png);
 }
 
 div.clients-item:nth-of-type(19) {
-    background-image: url(../images/patriots.png);
+    background-image: url(../images/v2/nissan.png);
 }
 
 div.clients-item:nth-of-type(20) {
-    background-image: url(../images/samsung.png);
+    background-image: url(../images/v2/patriots.png);
 }
 
 div.clients-item:nth-of-type(21) {
-    background-image: url(../images/spotify.png);
+    background-image: url(../images/v2/samsung.png);
 }
 
 div.clients-item:nth-of-type(22) {
-    background-image: url(../images/sum.png);
+    background-image: url(../images/v2/spotify.png);
 }
 
 div.clients-item:nth-of-type(23) {
-    background-image: url(../images/tecate.png);
+    background-image: url(../images/v2/sum.png);
 }
 
 div.clients-item:nth-of-type(24) {
-    background-image: url(../images/telcle.png);
+    background-image: url(../images/v2/tecate.png);
 }
 
 div.clients-item:nth-of-type(25) {
-    background-image: url(../images/tudn.png);
+    background-image: url(../images/v2/telcel.png);
+}
+
+div.clients-item:nth-of-type(26) {
+    background-image: url(../images/v2/tudn.png);
+}
+
+#container-tech div.clients-item {
+    margin-right: 60px;
+}
+
+#container-tech div.clients-item:nth-of-type(1) {
+    background-image: url(../images/v2/yalo.png);
+}
+
+#container-tech div.clients-item:nth-of-type(2) {
+    background-image: url(../images/v2/byjus.png);
+}
+
+#container-tech div.clients-item:nth-of-type(3) {
+    background-image: url(../images/v2/cc.png);
+}
+
+#container-tech div.clients-item:nth-of-type(4) {
+    background-image: url(../images/v2/coppel.png);
+}
+
+#container-tech div.clients-item:nth-of-type(5) {
+    background-image: url(../images/v2/boma.png);
+    margin-right: 0px;
+}
+
+.container-line {
+    width: 100%;
+}
+
+.line {
+    width: 385px; 
+    height: 1px;
+    background-color: #000;
+    margin: 60px auto;
+}
+
+.container-bio {
+    width: 450px;
+    background: linear-gradient(208.18deg, #7A7A7A 9.05%, #000000 76.74%);
+    border-radius: 24px;
+    overflow: auto;
+    padding: 60px 30px;
+    margin: 0px 15px;
+    overflow: hidden;
+    z-index: 9;
+}
+
+.container-bio .row {
+    width: 300px;
+    margin: 0px auto;
+    z-index: 8;
+}
+
+.arrow {
+    width: 10%;
+    height: 25px;
+    background-image: url(../images/v2/flecha.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 15px auto;
+    z-index: 100;
+    display: none;
+}
+
+.photo-bio {
+    width: 133px;
+    height: 133px;
+    border: 5px solid #fff;
+    border-radius: 51%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#mike-photo {
+    background-image: url(../images/v2/Mike.png);
+}
+
+#pato-photo {
+    background-image: url(../images/v2/Pato.png);
+}
+
+.name-bio {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    width: 150px;
+    height: 133px;
+    line-height: 133px;
+}
+
+.name-bio span:nth-of-type(1) {
+    width: 55px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.name-bio span:nth-of-type(2) {
+    width: 120px;
+    display: block;
+    font-weight: 400;
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+}
+
+.description-bio {
+    color: #fff;
+    font-family: 'Mulish', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 50px;
 }
 
 #investors-section {
     width: 100%;
-    background-color: #fff;
     padding: 150px 0px;
+    overflow: auto;
 }
 
 .investors-item {
-    background-position: right center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 120px;
+    height: 90px;
     padding-left: 0px!important;
     padding-right: 0px!important;
-    width: 22%;
+    width: 17%;
     float: left;
     margin-right: 3%;
 }
 
+.investors-item a {
+    height: 90px;
+    width: 100%;
+    display: block!important;
+}
+
 .investors-item:nth-of-type(2) {
-    background-image: url(../images/gerbera.png);
+    background-image: url(../images/v2/kiwi.png);
 }
 
 .investors-item:nth-of-type(5) {
-    background-image: url(../images/north-base.png);
-    margin-right: 0px!important;
+    background-image: url(../images/v2/finsus.png);
 }
 
 .investors-item:nth-of-type(4) {
-    background-image: url(../images/mexico-ventures.png);
+    background-image: url(../images/v2/cinepolis.png);
 }
 
 .investors-item:nth-of-type(3) {
-    background-image: url(../images/ignia.png);
-}
-
-.investors-item:nth-of-type(7) {
-    background-image: url(../images/rodina.png);
-    background-size: 100%!important;
-}
-
-.investors-item:nth-of-type(8) {
-    background-image: url(../images/startup-circle.png);
+    background-image: url(../images/v2/busca.png);
 }
 
 .investors-item:nth-of-type(6) {
-    background-image: url(../images/pmovil.png);
+    background-image: url(../images/v2/mmk.png);
+    margin-right: 0px!important;
 }
 
 #milestones-section {
     width: 100%;
     padding: 150px 0px;
-    background-color: #f1f0f0;
 }
 
 #container-carousel {
@@ -509,8 +570,7 @@ div.clients-item:nth-of-type(25) {
 }
 
 .carousel {
-    height: 230px;
-    margin: 50px auto;
+    height: 350px;
 }
 
 .slick-list {
@@ -524,9 +584,9 @@ div.clients-item:nth-of-type(25) {
 }
 
 .info-item {
-    width: 600px!important;
-    border: 2px solid #363636;
     margin: auto;
+    background: linear-gradient(208.18deg, #7A7A7A 9.05%, #000000 76.74%);
+    border-radius: 24px;
 }
 
 .carousel .slick-slide {
@@ -539,46 +599,34 @@ div.clients-item:nth-of-type(25) {
     opacity: 1;
 }
 
-.carousel-img-container {
-    width: 50%;
-    height: 100%;
-    float: left;
-    position: relative;
-}
-
 .carousel-img {
-    width: 173px;
-    height: 118px;
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    right: 0px;
-    left: 0px;
-    margin: auto;
+    width: 150px;
+    height: 100px;
+    margin: 30px auto;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .carousel-txt {
-    width: 50%;
-    height: 100%;
-    background-color: #fff;
-    float: right;
-    padding: 15px 20px;
+    width: 400px;
+    margin: 0px auto;
 }
 
 .carousel-date {
-    font-family: 'Proxima-Nova-Bold', sans-serif;
-    font-size: 25px;
-    margin-bottom: 5px;
-    color: #363636;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    margin: 0px auto 25px auto;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
 }
 
 .carousel-description {
-    font-family: 'Proxima-Nova-Regular', sans-serif;
-    font-size: 18px;
-    color: #363636;
+    font-family: 'Mulish', sans-serif;
+    font-size: 19px;
+    color: #fff;
+    font-weight: 400;
 }
 
 .slick-dots {
@@ -588,9 +636,9 @@ div.clients-item:nth-of-type(25) {
 .slick-dots li {
     text-align: center;
     overflow: visible;
-    width: 13%!important;
+    width: 9%!important;
     height: 4px!important;
-    margin: 0px!important;
+    margin: -7px!important;
     background-color: #aaaaaa;
 }
 
@@ -606,13 +654,13 @@ div.clients-item:nth-of-type(25) {
     background-repeat: no-repeat!important;
     background-size: 70% 50%!important;
     margin-top: -15px;
-    background-color: #272425!important;
+    background-color: #000!important;
     -webkit-transition: -webkit-transform .5s ease;
     -webkit-transition: transform .5s ease;
     transition: transform .5s ease;
 }
 
-.slick-dots li:nth-of-type(8) {
+.slick-dots li:nth-of-type(13) {
     background-color: transparent;
     max-width: 36px;
 }
@@ -624,116 +672,96 @@ div.clients-item:nth-of-type(25) {
 }
 
 #slick-slide-control00 {
-    background-color: #000!important;
     background-image: url(../images/underdog-thumb.png);
 }
 
 #slick-slide-control01 {
-    background-color: #dad9de!important;
     background-image: url(../images/mt-thumb.png);
 }
 
+#slick-slide-control03 {
+    background-image: url(../images/expansion-thumb.png);
+    background-size: 70% 70% !important;
+}
+
 #slick-slide-control02 {
-    background-color: #2f52a9!important;
     background-image: url(../images/telcel-thumb.png);
 }
 
-#slick-slide-control03 {
-    background-color: #000!important;
-    background-image: url(../images/icon_juanfutbol.svg);
+#slick-slide-control04 {
+    background-image: url(../images/v2/soccerly-thumb.png);
     background-size: 80% 80% !important;
 }
 
-#slick-slide-control07 {
-    background-color:#d50032!important;
-    background-image: url(../images/icon_jb.svg);
-    background-size: 50% 60% !important;
-}
-
-#slick-slide-control05 {
-    background-color:#a512d6!important;
+#slick-slide-control08 {
     background-image: url(../images/logo_frida_w.svg);
     background-size: 65% 65% !important;
 }
 
-#slick-slide-control04 {
-    background-color:#000!important;
-    background-image: url(../images/penta_icon.svg);
+#slick-slide-control07 {
+    background-image: url(../images/tikitaka_icon.svg);
+    background-size: 65% 65% !important;
+}
+
+#slick-slide-control05 {
+    background-image: url(../images/icon_juanfutbol.svg);
     background-size: 60% 60% !important;
 }
 
 #slick-slide-control06 {
-    background-color:#000!important;
-    background-image: url(../images/tikitaka_icon.svg);
+    background-image: url(../images/penta_icon.svg);
+}
+
+#slick-slide-control09 {
+    background-image: url(../images/icon_jb.svg);
+    background-size: 60% 60% !important;
+}
+
+#slick-slide-control010 {
+    background-image: url(../images/v2/pokal-thumb.png);
+    background-size: 100%!important;
+}
+
+#slick-slide-control011 {
+    background-image: url(../images/v2/sonder-thumb.png);
+    background-size: 60% 60% !important;
+}
+
+#slick-slide-control012 {
+    background-image: url(../images/v2/playmaker-thumb.png);
+    background-size: 60% 60% !important;
 }
 
 #contact-section {
     width: 100%;
-    padding: 150px 0px;
-    background-color: #fff;
+    padding: 100px 0px;
+    background-color: #000;
 }
 
 .title-contact {
-    font-family: 'Proxima-Nova-Bold', sans-serif;
-    font-size: 30px;
-    color: #363636;
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    color: #fff;
+    width: 100%;
 }
 
 .email-contact {
-    font-family: 'Proxima-Nova-Regular', sans-serif;
-    font-size: 22px;
-    color: #aaaaaa;
+    font-family: 'Mulish', sans-serif;
+    font-size: 21px;
+    color: #d2d2d2;
+    font-weight: 300;
 }
 
-#footer-section {
-    width: 100%;
-    padding: 50px 0px;
-    background-color: #000;
-}
-
-#footer-section .container {
-    overflow: auto;
-    position: relative;
-}
-
-#footer-section .container .logo {
-    width: 150px;
-    height: 100px;
-    float: left;
-    position: initial;
-}
-
-#combo {
-    float: right;
-    width: 350px;
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-}
-
-#combo select {
-    background-color: #000;
-    border: 1px solid #fff;
-    color: #fff;
-    font-size: 12px;
-    font-family: 'Proxima-Nova-Regular';
-    width: 125px;
-    height: 20px;
-    padding: 0px 4px 1px;
-    float: left;
-    outline:none !important;
-    outline-width: 0 !important;
-    box-shadow: none;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    -webkit-appearance: none; -moz-appearance: none; appearance: none;
+.email-contact span {
+    font-weight: 700;
 }
 
 #date-dev {
     color: #fff;
     font-size: 14px;
-    font-family: 'Proxima-Nova-Regular';
+    font-family: 'Poppins';
     float: right;
+    margin-right: 50px;
 }
 
 #container-timeline {
@@ -769,7 +797,7 @@ div.clients-item:nth-of-type(25) {
     background-size: 70% 50%;
 }
 
-.timeline-item:nth-of-type(2) .timeline-img-container .timeline-img {
+.timeline-item:nth-of-type(2) .timeline-img-container .timeline-img, .timeline-item:nth-of-type(4) .timeline-img-container .timeline-img {
     background-size: 80% 55%;
 }
 
@@ -777,23 +805,23 @@ div.clients-item:nth-of-type(25) {
     background-size: 80% 55%;
 }
 
-.timeline-item:nth-of-type(4) .timeline-img-container .timeline-img {
+.timeline-item:nth-of-type(5) .timeline-img-container .timeline-img {
     background-size: 80% 80%;
 }
 
-.timeline-item:nth-of-type(5) .timeline-img-container .timeline-img {
+.timeline-item:nth-of-type(6) .timeline-img-container .timeline-img {
     background-size: 60% 60%;
 }
 
-.timeline-item:nth-of-type(6) .timeline-img-container .timeline-img {
+.timeline-item:nth-of-type(7) .timeline-img-container .timeline-img {
     background-size: 70% 70%;
 }
 
-.timeline-item:nth-of-type(7) .timeline-img-container .timeline-img {
+.timeline-item:nth-of-type(8) .timeline-img-container .timeline-img {
     background-size: 60% 55%;
 }
 
-.timeline-item:nth-of-type(8) .timeline-img-container .timeline-img {
+.timeline-item:nth-of-type(9) .timeline-img-container .timeline-img {
     background-size: 80% 55%;
 }
 
@@ -805,7 +833,7 @@ div.clients-item:nth-of-type(25) {
 #back-line {
     position: absolute;
     top: 0px;
-    left: 1.9rem;
+    left: 2.8rem;
     width: 0.08rem;
     height: calc(95% - 3rem);
     margin-top: 0.5rem;
@@ -827,12 +855,18 @@ div.clients-item:nth-of-type(25) {
 }
 
 @media screen and (max-width: 1210px) {
-    .brand-img {
-        width: 80%;
+    .navbar-brand {
+        background-image: url(../images/underdog.png);
+        width: 80px;
+        max-width: 80px;
     }
 
     .our-title {
         font-size: 35px;
+    }
+
+    .our-title-es {
+        font-size: 33px;
     }
 
     .out-txt {
@@ -840,43 +874,43 @@ div.clients-item:nth-of-type(25) {
         height: 220px;
     }
 
-    .clients-item:nth-child(6n+1) {
+    .clients-item:nth-child(5n+1) {
         margin-right: 30px;
     }
 
-    .clients-item:nth-child(5n+1) {
+    .clients-item:nth-child(4n+1) {
         margin-right: 0px;
+    }
+
+    #container-tech div.clients-item {
+        margin-right: 40px;
     }
 }
 
 @media screen and (max-width: 991px) {
-    .navbar-brand {
-        background-image: url(../images/underdog.png);
-        width: 80px;
-        max-width: 80px;
+    .nav-link {
+        margin-right: 0rem!important;
+        min-width: 58px!important;
+    }
+
+    .container-bio {
+        width: 330px;
     }
 
     #our-section .container {
         max-width: 90%!important;
     }
 
-    .our-container {
-        max-width: 32.1% !important;
-    }
-
-    .out-txt {
-        height: 300px;
-    }
-
     #clients-section .container {
         max-width: 630px!important;
+        overflow: hidden;
     }
 
     .clients-item {
-        width: 186px;
+        width: 170px;
     }
 
-    .clients-item:nth-child(5n+1) {
+    .clients-item:nth-child(4n+1) {
         margin-right: 30px;
     }
 
@@ -886,10 +920,9 @@ div.clients-item:nth-of-type(25) {
 }
 
 @media screen and (max-width: 831px) {
-    .navbar-brand{
-        display: none!important;
+    .navbar-brand {
+        height: 50px;
     }
-
     .our-title {
         font-size: 27px;
         line-height: 35px;
@@ -898,6 +931,10 @@ div.clients-item:nth-of-type(25) {
     .out-txt {
         font-size: 17px;
         height: 220px;
+    }
+
+    .our-txt-es {
+        height: 380px;
     }
 }
 
@@ -962,8 +999,20 @@ div.clients-item:nth-of-type(25) {
         height: 25px!important;
     }
 
+    .arrow {
+        display: block;
+    }
+
     #brands-section .container .row {
         margin-top: 0px;
+    }
+
+    .note-responsive {
+        display: block;
+    }
+
+    #note-mt, #note-pm {
+        display: none;
     }
 
     #clients-section .container .title-section, #investors-section .container .title-section, #milestones-section .container .title-section, #contact-section .container .title-section {
@@ -998,7 +1047,7 @@ div.clients-item:nth-of-type(25) {
     }
 
     .clients-item {
-        width: 29%;
+        width: 26%;
     }
 
     .clients-item:nth-child(4n+1) {
@@ -1014,7 +1063,7 @@ div.clients-item:nth-of-type(25) {
     }
 
     .investors-item {
-        width: 110px;
+        width: 150px;
         height: 60px;
         margin-right: 17%;
         margin-bottom: 1rem!important;
@@ -1054,10 +1103,6 @@ div.clients-item:nth-of-type(25) {
         height: auto!important;
     }
 
-    .our-button {
-        margin: 30px auto 0px auto;
-    }
-
     .title-section {
         margin-bottom: 30px;
     }
@@ -1065,11 +1110,20 @@ div.clients-item:nth-of-type(25) {
     .brand-content {
         margin: 0px auto 25px auto !important;
     }
+
+    .container-bio {
+        height: 245px;
+        margin: 20px auto;
+    }
 }
 
 @media screen and (max-width: 700px) {
     #clients-section .container {
         max-width: 465px !important;
+    }
+
+    .clients-item {
+        width: 24%;
     }
 }
 
@@ -1083,6 +1137,8 @@ div.clients-item:nth-of-type(25) {
     #cover-info {
         width: 90%;
         height: 410px;
+        left: 0px;
+        right: 0px;
     }
 }
 
@@ -1123,6 +1179,11 @@ div.clients-item:nth-of-type(25) {
 
     #investors-section .container {
         width: 300px !important;
+    }
+
+    .investors-item {
+        width: 125px;
+        margin-right: 0%;
     }
 }
 

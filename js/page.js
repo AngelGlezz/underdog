@@ -32,14 +32,14 @@ $(document).ready(function(){
         return false;
 	});
 
-	$("#who").click(function() {
+	$(".who").click(function() {
 		$('body,html').animate({
             scrollTop: $('#our-section').offset().top
         }, 1000);
         return false;
 	});
 
-	$("#what").click(function() {
+	$("#line-cover").click(function() {
 		$('body,html').animate({
             scrollTop: $('#our-section').offset().top
         }, 1000);
@@ -60,9 +60,9 @@ $(document).ready(function(){
         return false;
 	});
 
-	$("#investors").click(function() {
+	$(".team").click(function() {
 		$('body,html').animate({
-            scrollTop: $('#investors-section').offset().top
+            scrollTop: $('#team').offset().top
         }, 1000);
         return false;
 	});
@@ -74,10 +74,31 @@ $(document).ready(function(){
         return false;
 	});
 
-	$("#contact").click(function() {
+	$(".boards").click(function() {
+		$('body,html').animate({
+            scrollTop: $('#investors-section').offset().top
+        }, 1000);
+        return false;
+	});
+
+	$(".contact").click(function() {
 		$('body,html').animate({
             scrollTop: $('#contact-section').offset().top
         }, 1000);
         return false;
+	});
+
+	$('.arrow').click(function () {
+		if ($(this).hasClass('short')) {
+			$(this).parent().css('height','auto');
+			$(this).addClass('extend');
+			$(this).removeClass('short');
+			$(this).css('transform', 'rotate(180deg)');
+		} else if ($(this).hasClass('extend')) {
+			$(this).parent().css('height','245px');
+			$(this).addClass('short');
+			$(this).removeClass('extend');
+			$(this).css('transform', 'rotate(0deg)');
+		}
 	});
 });
