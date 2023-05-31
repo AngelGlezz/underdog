@@ -1,3 +1,10 @@
+.page {
+    overflow: auto;
+    background-image: url(../images/v2/ffondo.png);
+    background-position: center;;
+    background-size: contain;
+}
+
 #cover {
     width: 100%;
     height: 100vh;
@@ -119,7 +126,6 @@
 #our-section {
     width: 100%;
     padding: 150px 0px;
-    background-color: #fff;
 }
 
 .our-container {
@@ -196,7 +202,6 @@
 
 #brands-section {
     width: 100%;
-    background-color: #fff;
     padding: 150px 0px;
 }
 
@@ -297,8 +302,6 @@
 
 #clients-section {
     width: 100%;
-    padding: 150px 0px;
-    background-color: #fff;
 }
 
 #clients-section .container {
@@ -445,6 +448,11 @@ div.clients-item:nth-of-type(26) {
     margin-right: 0px;
 }
 
+#container-tech div.clients-item:nth-of-type(6) {
+    background-image: url(../images/v2/tressor.png);
+    margin-right: 0px;
+}
+
 .container-line {
     width: 100%;
 }
@@ -530,7 +538,7 @@ div.clients-item:nth-of-type(26) {
 .description-bio {
     color: #fff;
     font-family: 'Mulish', sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 400;
     line-height: 20px;
     margin-top: 50px;
@@ -538,7 +546,7 @@ div.clients-item:nth-of-type(26) {
 
 #investors-section {
     width: 100%;
-    padding: 150px 0px;
+    padding-bottom: 150px;
     overflow: auto;
 }
 
@@ -578,16 +586,18 @@ div.clients-item:nth-of-type(26) {
 
 .investors-item:nth-of-type(6) {
     background-image: url(../images/v2/mmk.png);
-    margin-right: 0px!important;
 }
 
 .investors-item:nth-of-type(7) {
     background-image: url(../images/v2/anahuac.png);
-    margin-right: 0px!important;
 }
 
 .investors-item:nth-of-type(8) {
     background-image: url(../images/v2/endeavor.png);
+}
+
+.investors-item:nth-of-type(9) {
+    background-image: url(../images/v2/publicis.png);
     margin-right: 0px!important;
 }
 
@@ -748,12 +758,12 @@ div.clients-item:nth-of-type(26) {
     background-size: 60% 60% !important;
 }
 
-#slick-slide-control010 {
+#slick-slide-control011 {
     background-image: url(../images/v2/pokal-thumb.png);
     background-size: 100%!important;
 }
 
-#slick-slide-control011 {
+#slick-slide-control010 {
     background-image: url(../images/v2/sonder-thumb.png);
     background-size: 60% 60% !important;
 }
@@ -873,21 +883,22 @@ div.clients-item:nth-of-type(26) {
 }
 
 .timeline-date {
-    font-family: 'Proxima-Nova-Bold', sans-serif;
+    font-family: 'Mulish', sans-serif;
     font-size: 16px;
     color: #363636;
     margin-bottom: 10px;
+    font-weight: 1000;
 }
 
 .timeline-description {
-    font-family: 'Proxima-Nova-Regular', sans-serif;
+    font-family: 'Mulish', sans-serif;
     font-size: 13px;
     color: #363636;
 }
 
 @media screen and (max-width: 1550px) {
     #cover {
-        height: 135vh;
+        background-size: 200% 200%;
     }
 }
 
@@ -920,7 +931,7 @@ div.clients-item:nth-of-type(26) {
     }
 
     #container-tech div.clients-item {
-        margin-right: 40px;
+        margin-right: 30px;
     }
 }
 
@@ -945,6 +956,7 @@ div.clients-item:nth-of-type(26) {
 
     .clients-item {
         width: 170px;
+        margin-right: 45px;
     }
 
     .clients-item:nth-child(4n+1) {
@@ -1186,12 +1198,16 @@ div.clients-item:nth-of-type(26) {
 
     .clients-item {
         width: 30%;
-        margin-right: 20px!important;
+        margin-right: 18px!important;
         margin-bottom: 20px;
     }
 
     .clients-item:nth-child(3n+1) {
         margin-right: 0px!important;
+    }
+
+    #container-tech .clients-item {
+        margin-right: 12px!important;
     }
 }
 
