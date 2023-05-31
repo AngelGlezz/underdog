@@ -501,6 +501,7 @@ div.clients-item:nth-of-type(26) {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    float: left;
 }
 
 #mike-photo {
@@ -519,6 +520,8 @@ div.clients-item:nth-of-type(26) {
     width: 150px;
     height: 133px;
     line-height: 133px;
+    float: left;
+    margin-left: 17px;
 }
 
 .name-bio span:nth-of-type(1) {
@@ -592,13 +595,17 @@ div.clients-item:nth-of-type(26) {
     background-image: url(../images/v2/anahuac.png);
 }
 
-.investors-item:nth-of-type(8) {
+.investors-item:nth-of-type(10) {
     background-image: url(../images/v2/endeavor.png);
+    margin-right: 0px!important;
 }
 
 .investors-item:nth-of-type(9) {
     background-image: url(../images/v2/publicis.png);
-    margin-right: 0px!important;
+}
+
+.investors-item:nth-of-type(8) {
+    background-image: url(../images/v2/thepool.png);
 }
 
 #milestones-section {
