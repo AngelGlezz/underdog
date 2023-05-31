@@ -143,10 +143,31 @@
     line-height: 45px;
     font-weight: 600;
     margin-top: 60px;
+    overflow: auto;
 }
 
 .wiki-title span {
     color: #6a6a6a;
+    float: left;
+}
+
+.noun {
+    font-family: 'Mulish', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    color: #7D7987;
+    font-size: 21px;
+}
+
+.img-noun {
+    background-image: url(../images/v2/noun-bullhorn.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+    float: left;
+    margin-left: 20px;
 }
 
 .out-txt {
@@ -154,7 +175,7 @@
     font-size: 21px;
     line-height: 1.84;
     color: #363636;
-    margin-top: 30px;
+    margin: 30px auto;
     font-weight: 200;
 }
 
@@ -560,6 +581,16 @@ div.clients-item:nth-of-type(26) {
     margin-right: 0px!important;
 }
 
+.investors-item:nth-of-type(7) {
+    background-image: url(../images/v2/anahuac.png);
+    margin-right: 0px!important;
+}
+
+.investors-item:nth-of-type(8) {
+    background-image: url(../images/v2/endeavor.png);
+    margin-right: 0px!important;
+}
+
 #milestones-section {
     width: 100%;
     padding: 150px 0px;
@@ -676,7 +707,7 @@ div.clients-item:nth-of-type(26) {
 }
 
 #slick-slide-control01 {
-    background-image: url(../images/mt-thumb.png);
+    background-image: url(../images/v2/mt-thumb.png);
 }
 
 #slick-slide-control03 {
@@ -852,6 +883,12 @@ div.clients-item:nth-of-type(26) {
     font-family: 'Proxima-Nova-Regular', sans-serif;
     font-size: 13px;
     color: #363636;
+}
+
+@media screen and (max-width: 1550px) {
+    #cover {
+        height: 135vh;
+    }
 }
 
 @media screen and (max-width: 1210px) {
