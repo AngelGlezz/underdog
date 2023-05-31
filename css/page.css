@@ -423,32 +423,33 @@ div.clients-item:nth-of-type(26) {
     background-image: url(../images/v2/tudn.png);
 }
 
-#container-tech div.clients-item {
-    margin-right: 60px;
+.container-tech div.clients-item {
+    max-width: 174px;
+    margin: 25px 0px;
 }
 
-#container-tech div.clients-item:nth-of-type(1) {
+.tech-up div.clients-item:nth-of-type(1) {
     background-image: url(../images/v2/yalo.png);
 }
 
-#container-tech div.clients-item:nth-of-type(2) {
+.tech-up div.clients-item:nth-of-type(2) {
     background-image: url(../images/v2/byjus.png);
 }
 
-#container-tech div.clients-item:nth-of-type(3) {
+.tech-up div.clients-item:nth-of-type(3) {
     background-image: url(../images/v2/cc.png);
 }
 
-#container-tech div.clients-item:nth-of-type(4) {
+.tech-down div.clients-item:nth-of-type(1) {
     background-image: url(../images/v2/coppel.png);
 }
 
-#container-tech div.clients-item:nth-of-type(5) {
+.tech-down div.clients-item:nth-of-type(2) {
     background-image: url(../images/v2/boma.png);
     margin-right: 0px;
 }
 
-#container-tech div.clients-item:nth-of-type(6) {
+.tech-down div.clients-item:nth-of-type(3) {
     background-image: url(../images/v2/tressor.png);
     margin-right: 0px;
 }
@@ -937,7 +938,7 @@ div.clients-item:nth-of-type(26) {
         margin-right: 0px;
     }
 
-    #container-tech div.clients-item {
+    .container-tech div.clients-item {
         margin-right: 30px;
     }
 }
@@ -1213,7 +1214,7 @@ div.clients-item:nth-of-type(26) {
         margin-right: 0px!important;
     }
 
-    #container-tech .clients-item {
+    .container-tech .clients-item {
         margin-right: 12px!important;
     }
 }
