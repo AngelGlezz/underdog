@@ -509,7 +509,6 @@ div.clients-item:nth-of-type(26) {
 }
 
 .container-linkedin {
-    width: 450px;
     height: 50px;
     margin-top: 30px;
     padding: 0px 15px;
@@ -526,8 +525,9 @@ div.clients-item:nth-of-type(26) {
 }
 
 .linkedin a {
-    width: 100%;
-    height: 100%;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
 }
 
 #mike-photo {
@@ -982,7 +982,7 @@ div.clients-item:nth-of-type(26) {
         width: 360px;
     }
 
-    .container-bio, .container-linkedin {
+    .container-bio {
         width: 330px;
     }
 
