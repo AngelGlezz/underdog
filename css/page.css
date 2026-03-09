@@ -298,6 +298,11 @@
     background-image: url(../images/v2/pokal.png);
 }
 
+#palco {
+    background-image: url(../images/v2/palco-icon.png);
+    max-width: 80px;
+}
+
 #clients-section {
     width: 100%;
 }
@@ -687,7 +692,7 @@ div.clients-item:nth-of-type(26) {
 }
 
 .carousel-txt {
-    width: 400px;
+    width: 410px;
     margin: 0px auto;
 }
 
@@ -714,7 +719,7 @@ div.clients-item:nth-of-type(26) {
 .slick-dots li {
     text-align: center;
     overflow: visible;
-    width: 9%!important;
+    width: 8%!important;
     height: 4px!important;
     margin: -7px!important;
     background-color: #aaaaaa;
@@ -738,7 +743,7 @@ div.clients-item:nth-of-type(26) {
     transition: transform .5s ease;
 }
 
-.slick-dots li:nth-of-type(13) {
+.slick-dots li:nth-of-type(14) {
     background-color: transparent;
     max-width: 36px;
 }
@@ -807,6 +812,11 @@ div.clients-item:nth-of-type(26) {
 
 #slick-slide-control012 {
     background-image: url(../images/v2/playmaker-thumb.png);
+    background-size: 60% 60% !important;
+}
+
+#slick-slide-control013 {
+    background-image: url(../images/v2/palco-icon.png);
     background-size: 60% 60% !important;
 }
 
