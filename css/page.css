@@ -1,63 +1,22 @@
-@font-face
-{
-   font-family: "Proxima-Nova-Black";
-   src: url(../fonts/proxima_ssv/Proxima-Nova-Black.otf) format("opentype");
-}
-
-@font-face
-{
-   font-family: "Proxima-Nova-Bold";
-   src: url(../fonts/proxima_ssv/Proxima-Nova-Bold.otf) format("opentype");
-}
-
-@font-face
-{
-   font-family: "Proxima-Nova-Extrabold";
-   src: url(../fonts/proxima_ssv/Proxima-Nova-Extrabold.otf) format("opentype");
-}
-
-@font-face
-{
-   font-family: "Proxima-Nova-Regular";
-   src: url(../fonts/proxima_ssv/Proxima-Nova-Regular.otf) format("opentype");
-}
-
-@font-face
-{
-   font-family: "BodoniModa-Black";
-   src: url(../fonts/Bodoni_Moda/BodoniModa-Black.ttf) format("opentype");
-}
-
-@font-face
-{
-   font-family: "BodoniModa-Bold";
-   src: url(../fonts/Bodoni_Moda/BodoniModa-Bold.ttf) format("opentype");
-}
-
-@font-face
-{
-   font-family: "BodoniModa-ExtraBold";
-   src: url(../fonts/Bodoni_Moda/BodoniModa-ExtraBold.ttf) format("opentype");
-}
-
-@font-face
-{
-   font-family: "BodoniModa-Regular";
-   src: url(../fonts/Bodoni_Moda/BodoniModa-Regular.ttf) format("opentype");
+.page {
+    overflow: auto;
+    background-image: url(../images/v2/ffondo.png);
+    background-position: center;;
+    background-size: contain;
 }
 
 #cover {
     width: 100%;
     height: 100vh;
     background-color: black;
-    background-image: url(../images/fondo-cover.jpg);
+    background-image: url(../images/v2/cover.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
 
-#logo_cover {
+.logo {
     background-image: url(../images/underdog.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -72,39 +31,86 @@
     right: 0px;
 }
 
-.container {
-    max-width: 1300px!important;
-    padding: 0px!important;
+#cover-info {
+    width: 540px;
+    margin: auto;
+    position: absolute;
+    top: 300px;
+    left: 50px;
+}
+
+#info-logo {
+    width: 300px;
+    height: 200px;
+    background-image: url(../images/underdog.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#line-cover {
+    width: 25px;
+    height: 45px;
+    background-image: url(../images/v2/flecha.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
 }
 
 #navbarTogglerDemo02 {
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .navbar {
     width: 100%;
     height: 100px;
-    padding: 32px 0px;
-    background-color: #4e4e4e;
+    background-color: #000;
+    z-index: 9999;
+    padding: 0px!important;
+    align-items: self-start!important;
+}
+
+.navbar .container {
+    max-width: 90%!important;
+    min-height: 100%;
 }
 
 .navbar-brand {
+    max-width: 243px;
     width: 243px;
     height: 44px;
     background-image: url(../images/underdog-h.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.navbar-toggler-icon {
+    background-image: url(../images/menu.svg) !important;
+}
+
+#navbarTogglerDemo02 {
+    background-color: #000;
+    z-index: 9999;
 }
 
 .nav-link {
-    color: #fff;
+    color: #f2f2f2;
     font-size: 18px;
     letter-spacing: 0.45px;
     text-align: left;
-    margin-right: 56px;
-    font-family: 'Proxima-Nova-Regular', sans-serif;
+    margin-right: 2rem;
+    font-family: 'Mulish', serif;
     text-decoration: none;
+    cursor: pointer;
+    font-weight: 400;
 }
 
 .nav-link:hover {
@@ -118,73 +124,99 @@
 #our-section {
     width: 100%;
     padding: 150px 0px;
-    background-color: #f1f0f0;
 }
 
 .our-container {
     padding: 0px!important;
-    max-width: 26%!important;
+    max-width: 660px!important;
 }
 
 .our-title {
-    font-family: 'Proxima-Nova-Extrabold', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 48px;
     color: #363636;
-    height: 100px;
+    height: 50px;
     line-height: 50px;
+    font-weight: 700;
+}
+
+.wiki-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    color: #363636;
+    line-height: 45px;
+    font-weight: 600;
+    margin-top: 60px;
+    overflow: auto;
+}
+
+.wiki-title span {
+    color: #6a6a6a;
+    float: left;
+}
+
+.noun {
+    font-family: 'Mulish', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    color: #7D7987;
+    font-size: 21px;
+}
+
+.img-noun {
+    background-image: url(../images/v2/noun-bullhorn.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+    float: left;
+    margin-left: 20px;
 }
 
 .out-txt {
-    font-family: 'Proxima-Nova-Regular', sans-serif;
-    font-size: 22px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 21px;
     line-height: 1.84;
     color: #363636;
-    margin-top: 20px;
-    height: 200px;
+    margin: 30px auto;
+    font-weight: 200;
 }
 
 .our-button {
-    width: 100%;
+    width: 205px;
     height: 68px;
-    margin: 64px auto 0px auto;
-    border: solid 1px #272425;
-    padding-top: 16px;
-    text-align: center;
-    font-family: 'BodoniModa-Bold', sans-serif;
-    font-size: 21px;
-    font-weight: 900;
-    color: #363636;
-    overflow: auto;
+    background-image: url(../images/v2/consult-btn.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 80px auto 0px auto;
+    background-size: 95%;
     cursor: pointer;
-    transition: all .6s ease;
 }
 
 .our-button:hover {
-    background-color: #272425;
-    color: #fff;
+   background-size: 100%;
 }
 
 #brands-section {
     width: 100%;
-    background-color: #fff;
     padding: 150px 0px;
 }
 
 .title-section {
     width: 100%;
     font-size: 48px;
-    color: #363636;
-    font-family: 'Proxima-Nova-Black', sans-serif;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
     margin-bottom: 70px;
-    text-align: center;
+    font-weight: 700;;
 }
 
 .brand-content {
     position: relative;
-    border: 1px solid #272425; 
     padding: 0px!important;
-    height: 316px;
-    max-width: 30%!important;
+    height: 11rem;
+    max-width: 240px!important;
 }
 
 #brands-section .container .row {
@@ -196,9 +228,9 @@
 .brand-img {
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
-    width: 300px;
+    background-size: contain;
     height: 110px;
+    max-height: 80%;
     position: absolute;
     margin: auto;
     top: 0px;
@@ -207,222 +239,437 @@
     left: 0px;
 }
 
-#note {
+.note {
+    height: 25px;
+    font-size: 10px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-align: right;
+    line-height: 25px;
+    background-color: #000;
+    border-radius: 51px;
+    padding-right: 10px;
+    font-weight: 700;
+}
+
+.note-responsive {
+    display: none;
+    padding: 0px 10px;
+}
+
+#note-mt {
     width: 185px;
-    height: 30px;
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    border-top: 1px solid #272425;
-    border-left: 1px solid #272425;
-    font-size: 12px;
-    font-family: 'Proxima-Nova-Regular', sans-serif;
-    text-align: center;
-    line-height: 30px;
+}
+
+#note-pm {
+    width: 60%;
+    margin-right: 10%;
 }
 
 #mt {
-    background-image: url(../images/medio-tiempo.png);
+    background-image: url(../images/v2/mt.png);
 }
 
 #jf {
-    background-image: url(../images/juanfut.png);
+    background-image: url(../images/v2/jf.png);
 }
 
 #jb {
-    background-image: url(../images/juanbeis.png);
+    background-image: url(../images/v2/jb.png);
 }
 
 #fp {
-    background-image: url(../images/fridapop.png);
-    width: 200px;
-    height: 200px;
+    background-image: url(../images/v2/frida.png);
 }
 
 #tk {
-    background-image: url(../images/tikitaka.png);
+    background-image: url(../images/v2/tikitaka.png);
 }
 
 #pt {
-    background-image: url(../images/penta.png);
+    background-image: url(../images/v2/penta.png);
+}
+
+#sonder {
+    background-image: url(../images/v2/sonder.png);
+}
+
+#pokal {
+    background-image: url(../images/v2/pokal.png);
+}
+
+#palco {
+    background-image: url(../images/v2/palco-icon.png);
+    max-width: 80px;
 }
 
 #clients-section {
     width: 100%;
-    padding: 150px 0px;
-    background-color: #f1f0f0;
 }
 
 #clients-section .container {
     overflow: auto;
 }
 
-#clients-section .container .title-section, #investors-section .container .title-section, #milestones-section .container .title-section {
-    text-align: left;
-}
-
 .clients-item {
-    width: 135px;
-    height: 90px;
-    margin-right: 50px;
+    width: 174px;
+    height: 100px;
+    margin-right: 60px;
     margin-bottom: 50px;
     float: left;
     background-position: center;
-    background-size: auto;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
-.clients-item:nth-child(7n+1) {
+.clients-item:nth-child(5n+1) {
     margin-right: 0px;
 }
 
 div.clients-item:nth-of-type(2) {
-    background-image: url(../images/adidas.png);
+    background-image: url(../images/v2/adidas.png);
 }
 
 div.clients-item:nth-of-type(3) {
-    background-image: url(../images/barcel.png);
+    background-image: url(../images/v2/caliente.png);
 }
 
 div.clients-item:nth-of-type(4) {
-    background-image: url(../images/bundesliga.png);
+    background-image: url(../images/v2/cocacola.png);
 }
 
 div.clients-item:nth-of-type(5) {
-    background-image: url(../images/caliente.png);
+    background-image: url(../images/v2/cowboys.png);
 }
 
 div.clients-item:nth-of-type(6) {
-    background-image: url(../images/cocacola.png);
+    background-image: url(../images/v2/ea.png);
 }
 
 div.clients-item:nth-of-type(7) {
-    background-image: url(../images/ea-sport.png);
+    background-image: url(../images/v2/footballco.png);
 }
 
 div.clients-item:nth-of-type(8) {
-    background-image: url(../images/game-pass.png);
+    background-image: url(../images/v2/foxsports.png);
 }
 
 div.clients-item:nth-of-type(9) {
-    background-image: url(../images/gillete.png);
+    background-image: url(../images/v2/heineken.png);
 }
 
 div.clients-item:nth-of-type(10) {
-    background-image: url(../images/heineken.png);
+    background-image: url(../images/v2/innova.png);
 }
 
 div.clients-item:nth-of-type(11) {
-    background-image: url(../images/innovasport.png);
+    background-image: url(../images/v2/lmb.png);
 }
 
 div.clients-item:nth-of-type(12) {
-    background-image: url(../images/liga-mx.png);
+    background-image: url(../images/v2/laliga.png);
 }
 
 div.clients-item:nth-of-type(13) {
-    background-image: url(../images/mextenis.png);
+    background-image: url(../images/v2/ligamx.png);
 }
 
 div.clients-item:nth-of-type(14) {
-    background-image: url(../images/nfl.png);
+    background-image: url(../images/v2/broncos.png);
 }
 
 div.clients-item:nth-of-type(15) {
-    background-image: url(../images/nike.png);
+    background-image: url(../images/v2/mextenis.png);
 }
 
 div.clients-item:nth-of-type(16) {
-    background-image: url(../images/nissan.png);
+    background-image: url(../images/v2/nba.png);
 }
 
 div.clients-item:nth-of-type(17) {
-    background-image: url(../images/patriots.png);
+    background-image: url(../images/v2/nfl.png);
 }
 
 div.clients-item:nth-of-type(18) {
-    background-image: url(../images/samsung.png);
+    background-image: url(../images/v2/nike.png);
 }
 
 div.clients-item:nth-of-type(19) {
-    background-image: url(../images/spotify.png);
+    background-image: url(../images/v2/nissan.png);
 }
 
 div.clients-item:nth-of-type(20) {
-    background-image: url(../images/tecate.png);
+    background-image: url(../images/v2/patriots.png);
 }
 
 div.clients-item:nth-of-type(21) {
-    background-image: url(../images/telcle.png);
+    background-image: url(../images/v2/samsung.png);
 }
 
 div.clients-item:nth-of-type(22) {
-    background-image: url(../images/tudn.png);
+    background-image: url(../images/v2/spotify.png);
+}
+
+div.clients-item:nth-of-type(23) {
+    background-image: url(../images/v2/sum.png);
+}
+
+div.clients-item:nth-of-type(24) {
+    background-image: url(../images/v2/tecate.png);
+}
+
+div.clients-item:nth-of-type(25) {
+    background-image: url(../images/v2/telcel.png);
+}
+
+div.clients-item:nth-of-type(26) {
+    background-image: url(../images/v2/tudn.png);
+}
+
+.container-tech div.clients-item {
+    max-width: 174px;
+    margin: 25px 0px;
+}
+
+.tech-up div.clients-item:nth-of-type(1) {
+    background-image: url(../images/v2/yalo.png);
+}
+
+.tech-up div.clients-item:nth-of-type(2) {
+    background-image: url(../images/v2/byjus.png);
+}
+
+.tech-up div.clients-item:nth-of-type(3) {
+    background-image: url(../images/v2/cc.png);
+}
+
+.tech-down div.clients-item:nth-of-type(1) {
+    background-image: url(../images/v2/coppel.png);
+}
+
+.tech-down div.clients-item:nth-of-type(2) {
+    background-image: url(../images/v2/boma.png);
+    margin-right: 0px;
+}
+
+.tech-down div.clients-item:nth-of-type(3) {
+    background-image: url(../images/v2/tressor.png);
+    margin-right: 0px;
+}
+
+.container-line {
+    width: 100%;
+}
+
+.line {
+    width: 385px; 
+    height: 1px;
+    background-color: #000;
+    margin: 60px auto;
+}
+
+.container-bio {
+    width: 450px;
+    background: linear-gradient(208.18deg, #7A7A7A 9.05%, #000000 76.74%);
+    border-radius: 24px;
+    overflow: auto;
+    padding: 60px 30px;
+    margin: 0px 15px;
+    overflow: hidden;
+    z-index: 9;
+}
+
+.container-linkedin-bio {
+    width: 480px;
+    overflow: auto;
+}
+
+.container-bio .row {
+    width: 300px;
+    margin: 0px auto;
+    z-index: 8;
+}
+
+.arrow {
+    width: 10%;
+    height: 25px;
+    background-image: url(../images/v2/flecha.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 15px auto;
+    z-index: 100;
+    display: none;
+}
+
+.photo-bio {
+    width: 133px;
+    height: 133px;
+    border: 5px solid #fff;
+    border-radius: 51%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+}
+
+.container-linkedin {
+    height: 50px;
+    margin-top: 30px;
+    padding: 0px 15px;
+}
+
+.linkedin {
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/v2/linkedin.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0px auto;
+}
+
+.linkedin a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+#mike-photo {
+    background-image: url(../images/v2/Mike.png);
+}
+
+#pato-photo {
+    background-image: url(../images/v2/Pato.png);
+}
+
+.name-bio {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    width: 150px;
+    height: 133px;
+    line-height: 133px;
+    float: left;
+    margin-left: 17px;
+}
+
+.name-bio span:nth-of-type(1) {
+    width: 55px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.name-bio span:nth-of-type(2) {
+    width: 120px;
+    display: block;
+    font-weight: 400;
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+}
+
+.description-bio {
+    color: #fff;
+    font-family: 'Mulish', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 50px;
 }
 
 #investors-section {
     width: 100%;
-    background-color: #fff;
-    padding: 150px 0px;
+    padding-bottom: 150px;
+    overflow: auto;
+}
+
+#investors-section .title-section {
+    line-height: 48px;
 }
 
 .investors-item {
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: auto;
-    height: 120px;
+    background-size: contain;
+    height: 90px;
     padding-left: 0px!important;
     padding-right: 0px!important;
+    width: 17%;
+    float: left;
+    margin-right: 3%;
 }
 
-.investors-item:nth-last-of-type(1) {
-    background-image: url(../images/gerbera.png)
+.investors-item a {
+    height: 90px;
+    width: 100%;
+    display: block!important;
 }
 
-.investors-item:nth-last-of-type(2) {
-    background-image: url(../images/north-base.png)
+.investors-item:nth-of-type(2) {
+    background-image: url(../images/v2/kiwi.png);
 }
 
-.investors-item:nth-last-of-type(3) {
-    background-image: url(../images/mexico-ventures.png)
+.investors-item:nth-of-type(5) {
+    background-image: url(../images/v2/finsus.png);
 }
 
-.investors-item:nth-last-of-type(4) {
-    background-image: url(../images/ignia.png)
+.investors-item:nth-of-type(4) {
+    background-image: url(../images/v2/cinepolis.png);
 }
 
-.investors-item:nth-last-of-type(5) {
-    background-image: url(../images/rodina.png)
+.investors-item:nth-of-type(3) {
+    background-image: url(../images/v2/busca.png);
 }
 
-.investors-item:nth-last-of-type(6) {
-    background-image: url(../images/startup-circle.png)
+.investors-item:nth-of-type(6) {
+    background-image: url(../images/v2/mmk.png);
 }
 
-.investors-item:nth-last-of-type(7) {
-    background-image: url(../images/pmovil.png)
+.investors-item:nth-of-type(7) {
+    background-image: url(../images/v2/anahuac.png);
+}
+
+.investors-item:nth-of-type(10) {
+    background-image: url(../images/v2/endeavor.png);
+    margin-right: 0px!important;
+}
+
+.investors-item:nth-of-type(9) {
+    background-image: url(../images/v2/publicis.png);
+}
+
+.investors-item:nth-of-type(8) {
+    background-image: url(../images/v2/thepool.png);
 }
 
 #milestones-section {
     width: 100%;
     padding: 150px 0px;
-    background-color: #f1f0f0;
+}
+
+#container-carousel {
+    height: 500px;
 }
 
 .carousel {
-    width: 600px;
-    height: 230px;
-    margin: 50px auto;
+    height: 350px;
 }
 
-.slick-list, .slick-track {
+.slick-list {
+    width: 600px!important;
+    height: 100%!important;
+    margin: auto!important;
+}
+
+.slick-track {
     height: 100%!important;
 }
 
 .info-item {
-    width: 600px!important;
-    border: 2px solid #363636;
     margin: auto;
+    background: linear-gradient(208.18deg, #7A7A7A 9.05%, #000000 76.74%);
+    border-radius: 24px;
 }
 
 .carousel .slick-slide {
@@ -435,44 +682,624 @@ div.clients-item:nth-of-type(22) {
     opacity: 1;
 }
 
-.carousel-img-container {
-    width: 50%;
-    height: 100%;
-    float: left;
-    position: relative;
-}
-
 .carousel-img {
-    width: 173px;
-    height: 118px;
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    right: 0px;
-    left: 0px;
-    margin: auto;
+    width: 150px;
+    height: 100px;
+    margin: 30px auto;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .carousel-txt {
-    width: 50%;
-    height: 100%;
-    background-color: #fff;
-    float: right;
-    padding: 20px;
+    width: 410px;
+    margin: 0px auto;
 }
 
 .carousel-date {
-    font-family: 'Proxima-Nova-Bold', sans-serif;
-    font-size: 30px;
-    margin-bottom: 15px;
-    color: #363636;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    margin: 0px auto 25px auto;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
 }
 
 .carousel-description {
-    font-family: 'Proxima-Nova-Regular', sans-serif;
-    font-size: 18px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 19px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.slick-dots {
+    bottom: -100px!important;
+}
+
+.slick-dots li {
+    text-align: center;
+    overflow: visible;
+    width: 8%!important;
+    height: 4px!important;
+    margin: -7px!important;
+    background-color: #aaaaaa;
+}
+
+.slick-dots li button::before {
+    content: none!important;
+}
+
+.slick-dots li button {
+    width: 36px!important;
+    height: 36px!important;
+    border-radius: 51%;
+    background-position: center!important;
+    background-repeat: no-repeat!important;
+    background-size: 70% 50%!important;
+    margin-top: -15px;
+    background-color: #000!important;
+    -webkit-transition: -webkit-transform .5s ease;
+    -webkit-transition: transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.slick-dots li:nth-of-type(14) {
+    background-color: transparent;
+    max-width: 36px;
+}
+
+.slick-active button {
+    -webkit-transform: scale(1.75);
+    -ms-transform: scale(1.75);
+    transform: scale(1.75);
+}
+
+#slick-slide-control00 {
+    background-image: url(../images/underdog-thumb.png);
+}
+
+#slick-slide-control01 {
+    background-image: url(../images/v2/mt-thumb.png);
+}
+
+#slick-slide-control03 {
+    background-image: url(../images/expansion-thumb.png);
+    background-size: 70% 70% !important;
+}
+
+#slick-slide-control02 {
+    background-image: url(../images/telcel-thumb.png);
+}
+
+#slick-slide-control04 {
+    background-image: url(../images/v2/soccerly-thumb.png);
+    background-size: 80% 80% !important;
+}
+
+#slick-slide-control08 {
+    background-image: url(../images/logo_frida_w.svg);
+    background-size: 65% 65% !important;
+}
+
+#slick-slide-control07 {
+    background-image: url(../images/tikitaka_icon.svg);
+    background-size: 65% 65% !important;
+}
+
+#slick-slide-control05 {
+    background-image: url(../images/icon_juanfutbol.svg);
+    background-size: 60% 60% !important;
+}
+
+#slick-slide-control06 {
+    background-image: url(../images/penta_icon.svg);
+}
+
+#slick-slide-control09 {
+    background-image: url(../images/icon_jb.svg);
+    background-size: 60% 60% !important;
+}
+
+#slick-slide-control011 {
+    background-image: url(../images/v2/pokal-thumb.png);
+    background-size: 100%!important;
+}
+
+#slick-slide-control010 {
+    background-image: url(../images/v2/sonder-thumb.png);
+    background-size: 60% 60% !important;
+}
+
+#slick-slide-control012 {
+    background-image: url(../images/v2/playmaker-thumb.png);
+    background-size: 60% 60% !important;
+}
+
+#slick-slide-control013 {
+    background-image: url(../images/v2/palco-icon.png);
+    background-size: 60% 60% !important;
+}
+
+#contact-section {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #000;
+}
+
+.title-contact {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    color: #fff;
+    width: 100%;
+}
+
+.email-contact {
+    font-family: 'Mulish', sans-serif;
+    font-size: 21px;
+    color: #d2d2d2;
+    font-weight: 300;
+}
+
+.email-contact span {
+    font-weight: 700;
+}
+
+#date-dev {
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Poppins';
+    float: right;
+    margin-right: 50px;
+}
+
+#container-timeline {
+    max-width: 768px!important;
+    overflow: auto;
+    position: relative;
+    display: none;
+}
+
+.timeline-item {
+    width: 100%;
+    padding-left: 10px;
+    overflow: auto;
+}
+
+.timeline-img-container {
+    width: 40px;
+    height: 40px;
+    border-radius: 51%;
+    margin-right: 20px;
+    z-index: 9;
+}
+
+.timeline-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 51%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.timeline-item:nth-of-type(1) .timeline-img-container .timeline-img {
+    background-size: 70% 50%;
+}
+
+.timeline-item:nth-of-type(2) .timeline-img-container .timeline-img, .timeline-item:nth-of-type(4) .timeline-img-container .timeline-img {
+    background-size: 80% 55%;
+}
+
+.timeline-item:nth-of-type(3) .timeline-img-container .timeline-img {
+    background-size: 80% 55%;
+}
+
+.timeline-item:nth-of-type(5) .timeline-img-container .timeline-img {
+    background-size: 80% 80%;
+}
+
+.timeline-item:nth-of-type(6) .timeline-img-container .timeline-img {
+    background-size: 60% 60%;
+}
+
+.timeline-item:nth-of-type(7) .timeline-img-container .timeline-img {
+    background-size: 70% 70%;
+}
+
+.timeline-item:nth-of-type(8) .timeline-img-container .timeline-img {
+    background-size: 60% 55%;
+}
+
+.timeline-item:nth-of-type(9) .timeline-img-container .timeline-img {
+    background-size: 80% 55%;
+}
+
+.timeline-txt {
+    width: 80%;
+    margin-bottom: 35px;
+}
+
+#back-line {
+    position: absolute;
+    top: 0px;
+    left: 2.8rem;
+    width: 0.08rem;
+    height: calc(95% - 3rem);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: rgb(204, 204, 204);
+}
+
+.timeline-date {
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
     color: #363636;
+    margin-bottom: 10px;
+    font-weight: 1000;
+}
+
+.timeline-description {
+    font-family: 'Mulish', sans-serif;
+    font-size: 13px;
+    color: #363636;
+}
+
+@media screen and (max-width: 1550px) {
+    #cover {
+        background-size: 200% 200%;
+    }
+}
+
+@media screen and (max-width: 1210px) {
+    .navbar-brand {
+        background-image: url(../images/underdog.png);
+        width: 80px;
+        max-width: 80px;
+    }
+
+    .our-title {
+        font-size: 35px;
+    }
+
+    .our-title-es {
+        font-size: 33px;
+    }
+
+    .out-txt {
+        font-size: 20px;
+        height: 220px;
+    }
+
+    .clients-item:nth-child(5n+1) {
+        margin-right: 30px;
+    }
+
+    .clients-item:nth-child(4n+1) {
+        margin-right: 0px;
+    }
+
+    .container-tech div.clients-item {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .nav-link {
+        margin-right: 0rem!important;
+        min-width: 58px!important;
+    }
+
+    .container-linkedin-bio {
+        width: 360px;
+    }
+
+    .container-bio {
+        width: 330px;
+    }
+
+    #our-section .container {
+        max-width: 90%!important;
+    }
+
+    #clients-section .container {
+        max-width: 630px!important;
+        overflow: hidden;
+    }
+
+    .clients-item {
+        width: 170px;
+        margin-right: 45px;
+    }
+
+    .clients-item:nth-child(4n+1) {
+        margin-right: 30px;
+    }
+
+    .clients-item:nth-child(3n+1) {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 831px) {
+    .navbar-brand {
+        height: 50px;
+    }
+    .our-title {
+        font-size: 27px;
+        line-height: 35px;
+    }
+
+    .out-txt {
+        font-size: 17px;
+        height: 220px;
+    }
+
+    .our-txt-es {
+        height: 380px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #info-logo {
+        width: 250px;
+        height: 180px;
+    }
+
+    #info-txt {
+        font-size: 18px;
+    }
+
+    .navbar {
+        height: 50px!important;
+    }
+
+    .navbar-brand{
+        display: block!important;
+        max-width: 150px;
+        height: 30px;
+        width: 100%;
+        background-image: url(../images/underdog-h.png);
+    }
+
+    #cover .logo {
+        display: none;
+    }
+
+    #cover-info, #who, #line-cover {
+        display: block;
+    }
+
+    #cover-info {
+        top: 140px;
+    }
+
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: .45rem!important;
+    }
+
+    .nav-item {
+        margin-left: 15px;
+    }
+
+    .container {
+        width: 90%!important;
+        margin: 0px auto!important;
+    }
+
+    .navbar .container {
+        max-width: 100%!important;
+        width: 100%!important;
+        margin: 0px!important;
+    }
+
+    .navbar .container .container {
+        max-width: 100%!important;
+        width: 100%!important;
+        margin: 0px!important;
+        min-height: 50px!important;
+    }
+
+    .navbar-toggler-icon {
+        width: 25px!important;
+        height: 25px!important;
+    }
+
+    .arrow {
+        display: block;
+    }
+
+    #brands-section .container .row {
+        margin-top: 0px;
+    }
+
+    .note-responsive {
+        display: block;
+    }
+
+    #note-mt, #note-pm {
+        display: none;
+    }
+
+    #clients-section .container .title-section, #investors-section .container .title-section, #milestones-section .container .title-section, #contact-section .container .title-section {
+        text-align: center;
+    }
+
+    #container-timeline {
+        display: block;
+    }
+
+    #container-carousel {
+        display: none;
+    }
+
+    #our-section .container {
+        display: block!important;
+    }
+
+    .our-container {
+        max-width: 90%!important;
+        margin: 0px auto 100px auto!important;
+    }
+
+    .out-txt {
+        height: 120px;
+    }
+
+    .brand-content {
+        
+        max-width: 90%!important;
+        margin: 0px auto 50px auto!important;
+    }
+
+    .clients-item {
+        width: 26%;
+    }
+
+    .clients-item:nth-child(4n+1) {
+        margin-right: 30px;
+    }
+
+    .clients-item:nth-child(3n+1) {
+        margin-right: 0px;
+    }
+
+    #investors-section .container {
+        width: 400px!important;
+    }
+
+    .investors-item {
+        width: 150px;
+        height: 60px;
+        margin-right: 17%;
+        margin-bottom: 1rem!important;
+    }
+
+    .investors-item:nth-child(2n+1) {
+        margin-right: 0px;
+        float: right;
+    }
+
+    #footer-section .container .logo, #combo select, #date-dev {
+        float: none;
+        margin: 30px auto;
+    }
+
+    #combo {
+        float: none;
+        width: 126px;
+        position: initial;
+        overflow: auto;
+        margin: auto;
+    }
+
+    #date-dev {
+        text-align: center;
+    }
+
+    #brands-section, #clients-section, #investors-section, #milestones-section, #contact-section, #our-section {
+        padding: 60px 0px;
+    }
+
+    .our-container {
+        margin: 0px auto 50px auto !important;
+    }
+
+    .our-title, .out-txt {
+        height: auto!important;
+    }
+
+    .title-section {
+        margin-bottom: 30px;
+    }
+
+    .brand-content {
+        margin: 0px auto 25px auto !important;
+    }
+
+    .container-bio {
+        height: 245px;
+        margin: 20px auto;
+    }
+
+    .container-linkedin-bio {
+        margin: 20px auto;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #clients-section .container {
+        max-width: 465px !important;
+    }
+
+    .clients-item {
+        width: 24%;
+    }
+}
+
+@media (min-width: 576px){
+    .navbar .container .container{
+        width:auto;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    #cover-info {
+        width: 90%;
+        left: 20px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    #clients-section .container {
+        max-width: 95% !important;
+    }
+
+    .clients-item {
+        width: 30%;
+        margin-right: 18px!important;
+        margin-bottom: 20px;
+    }
+
+    .clients-item:nth-child(3n+1) {
+        margin-right: 0px!important;
+    }
+
+    .container-tech .clients-item {
+        margin-right: 12px!important;
+    }
+}
+
+@media screen and (max-width: 467px) {
+    .clients-item {
+        height: 75px;
+    }
+
+    .title-contact {
+        font-size: 25px;
+    }
+
+    .email-contact {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 444px) {
+    .clients-item {
+        width: 29%;
+    }
+
+    #investors-section .container {
+        width: 300px !important;
+    }
+
+    .investors-item {
+        width: 125px;
+        margin-right: 0%;
+    }
+}
+
+@media screen and (max-width: 342px) {
+    .clients-item {
+        width: 28%;
+    }
 }
